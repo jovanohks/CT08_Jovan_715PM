@@ -33,7 +33,7 @@ function setup(){
     console.log(groceries)
     let ypos=50
     for (let item of groceries){
-        text
+        text(item,200,ypos)
     }
 }
 function draw(){
