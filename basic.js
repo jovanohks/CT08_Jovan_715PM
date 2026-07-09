@@ -19,7 +19,7 @@ function setup(){
     }else if (age <=12){
         console.log("upper primary");
     }else{
-        console.log("secondary")
+        console.log("secondary");
     }
 }
 function draw(){
