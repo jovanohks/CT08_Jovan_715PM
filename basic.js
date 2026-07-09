@@ -6,7 +6,7 @@ function setup(){
     let b=5;
     let area=0.5*a*b;
     console.log("area:",area);
-    text("area:"+area,100,100);
+    text("area:"+area,0,100);
     fill(0);
     for (let i=2; i<=20; i+=2){
         console.log(i);
