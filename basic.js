@@ -7,7 +7,7 @@ function setup(){
     let area=0.5*a*b;
     console.log("area:",area);
     text("area:"+area,100,100)
-    fill
+    fill(0)
 }
 function draw(){
 
