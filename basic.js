@@ -8,7 +8,7 @@ function setup(){
     console.log("area:",area);
     text("area:"+area,100,100);
     fill(0);
-    for (let i=2; i){
+    for (let i=2; i<=20; i+=2){
         console.log(i);
     }
 }
