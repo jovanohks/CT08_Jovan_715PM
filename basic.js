@@ -30,6 +30,10 @@ function setup(){
     groceries.push("orange")
     groceries.push("butter")
     groceries.splice(1,1,"kaya")
+    console.log(groceries)
+    for (let item of groceries){
+        
+    }
 }
 function draw(){
 
