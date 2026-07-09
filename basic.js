@@ -26,6 +26,7 @@ function setup(){
         console.log(count);
         count++;
     }
+    let groceries
 }
 function draw(){
 
