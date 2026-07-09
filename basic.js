@@ -6,6 +6,7 @@ function setup(){
     let height=5;
     let area=0.5*base*height;
     console.log(area)
+    text(area)
 }
 function draw(){
 
