@@ -31,9 +31,9 @@ function setup(){
     groceries.push("butter")
     groceries.splice(1,1,"kaya")
     console.log(groceries)
-    
+    let ypos=50
     for (let item of groceries){
-            
+        text
     }
 }
 function draw(){
