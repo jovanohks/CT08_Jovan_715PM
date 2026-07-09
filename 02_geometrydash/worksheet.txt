@@ -1,2 +1,3 @@
 minecraft:
 1.kill ender dragon
+2
