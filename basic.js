@@ -10,8 +10,8 @@ function setup(){
     fill(0);
     for (let i=2; i<=20; i+=2){
         console.log(i);
-        ypos=10+(i*10)
-        text(i,100,ypos)
+        ypos=10+(i*10);
+        text(i,100,ypos);
     }
     let age =9
     if (age <=9){
@@ -19,7 +19,7 @@ function setup(){
     }else if (age <=12){
         console.log("upper primary")
     }else{
-        console.log())
+        console.log("secondary")
     }
 }
 function draw(){
