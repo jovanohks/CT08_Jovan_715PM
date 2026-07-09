@@ -4,8 +4,8 @@ function setup(){
     console.log("hello world");
     let a=1;
     let b=2;
-    let sum=a+b;
-    console.log()
+    let area=0.5*a+b;
+    console.log("area:",area);
 }
 function draw(){
 
