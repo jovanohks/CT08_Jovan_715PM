@@ -29,12 +29,12 @@ function setup(){
     let groceries=["apple","milk","bread"];
     groceries.push("orange");
     groceries.push("butter");
-    groceries.splice(1,1,"kaya")
-    console.log(groceries)
-    let ypos=50
+    groceries.splice(1,1,"kaya");
+    console.log(groceries);
+    let ypos=50;
     for (let item of groceries){
         text(item,200,ypos);
-        ypos+=20
+        ypos+=20;
     }
 }
 function draw(){
