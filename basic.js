@@ -10,6 +10,7 @@ function setup(){
     fill(0);
     for (let i=2; i<=20; i+=2){
         console.log(i);
+        ypos=10+(i*10)
     }
 }
 function draw(){
