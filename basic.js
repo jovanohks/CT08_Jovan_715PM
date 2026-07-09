@@ -21,7 +21,11 @@ function setup(){
     }else{
         console.log("secondary");
     }
-    let count=0
+    let count=0;
+    while (count<10){
+        console.log(count);
+        count++;
+    }
 }
 function draw(){
 
