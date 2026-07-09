@@ -26,7 +26,7 @@ function setup(){
         console.log(count);
         count++;
     }
-    let groceries
+    let groceries=["apple","milk"]
 }
 function draw(){
 
