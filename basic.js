@@ -6,8 +6,11 @@ function setup(){
     let b=5;
     let area=0.5*a*b;
     console.log("area:",area);
-    text("area:"+area,100,100)
-    fill(0)
+    text("area:"+area,100,100);
+    fill(0);
+    for (let i=0; i<10; i++){
+        console.log(i);
+    }
 }
 function draw(){
 
