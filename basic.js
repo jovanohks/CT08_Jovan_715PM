@@ -32,7 +32,7 @@ function setup(){
     groceries.splice(1,1,"kaya")
     console.log(groceries)
     for (let item of groceries){
-        
+        text(item,1)
     }
 }
 function draw(){
