@@ -11,6 +11,7 @@ function setup(){
     for (let i=2; i<=20; i+=2){
         console.log(i);
         ypos=10+(i*10)
+        text()
     }
 }
 function draw(){
