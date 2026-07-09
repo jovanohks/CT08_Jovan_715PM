@@ -13,6 +13,10 @@ function setup(){
         ypos=10+(i*10)
         text(i,100,ypos)
     }
+    let age =9
+    if (age <=9){
+        
+    }
 }
 function draw(){
 
