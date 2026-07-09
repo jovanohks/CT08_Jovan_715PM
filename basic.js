@@ -29,7 +29,7 @@ function setup(){
     let groceries=["apple","milk","bread"]
     groceries.push("orange")
     groceries.push("butter")
-    groceries.splice(1,1,"")
+    groceries.splice(1,1,"kaya")
 }
 function draw(){
 
