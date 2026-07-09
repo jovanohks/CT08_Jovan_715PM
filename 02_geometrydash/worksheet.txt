@@ -1,2 +1,2 @@
 minecraft:
-1.
+1.kill ender dragon
