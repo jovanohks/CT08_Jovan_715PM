@@ -1,3 +1,3 @@
 minecraft:
 1.kill ender dragon
-2.WASD,mouse,space,shift,number keys
+2.WASD,mouse keys,space,shift,number keys
