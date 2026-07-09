@@ -21,6 +21,7 @@ function setup(){
     }else{
         console.log("secondary");
     }
+    let count=0
 }
 function draw(){
 
