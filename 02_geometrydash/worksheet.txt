@@ -2,4 +2,4 @@ minecraft:
 1.kill ender dragon
 2.WASD,mouse keys,space,shift,number keys
 3.beat game when win,lose things when die
-3b essential components of a game
+ essential components of a game
