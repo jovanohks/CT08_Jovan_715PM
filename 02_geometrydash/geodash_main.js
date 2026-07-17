@@ -28,7 +28,8 @@ function setup() {
     player=new Sprite(50,50,TILE_SIZE,TILE_SIZE);
     player.img=box;
     player.frction=0;
-    
+    player.bounciness=0;
+    player.collider=
 }
 
 function draw() {
