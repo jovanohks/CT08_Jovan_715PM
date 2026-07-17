@@ -16,3 +16,4 @@ load images
 3.auto run
 -player always moving right
 jumps on spacebar
+4.obstacles,orbs and reset
