@@ -30,7 +30,7 @@ function setup() {
     player.frction=0;
     player.bounciness=0;
     player.collider="none";
-    startCoordinate=[50,height]
+    startCoordinate=[50,height-]
 }
 
 function draw() {
