@@ -27,6 +27,7 @@ function setup() {
     const TILE_SIZE=50;
     player=new Sprite(50,50,TILE_SIZE,TILE_SIZE);
     player.img=box;
+    let bounciness=1
 }
 
 function draw() {
