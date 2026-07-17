@@ -1,5 +1,5 @@
 //player box
-
+let bg=50;
 
 // game variables
 const TILE_SIZE=50;
