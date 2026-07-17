@@ -18,7 +18,7 @@
 
 function preload() {
     box=loadImage("assets/cube.png");
-    bg=load
+    bg=loadImage("assets/geobg.png");
 }
 
 function setup() {
