@@ -12,3 +12,6 @@ create canvas
 create player variables
 load images
 2.build level and title maps
+
+3.auto run
+-player always moving right
