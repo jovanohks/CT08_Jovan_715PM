@@ -17,3 +17,4 @@ load images
 -player always moving right
 jumps on spacebar
 4.obstacles,orbs and reset
+adding more spikes,walls and orbs to the maps
