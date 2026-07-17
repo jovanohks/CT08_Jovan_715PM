@@ -18,3 +18,4 @@ load images
 jumps on spacebar
 4.obstacles,orbs and reset
 adding more spikes,walls and orbs to the maps
+when player collides with wall or spike,reset game
