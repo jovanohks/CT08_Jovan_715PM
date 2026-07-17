@@ -10,3 +10,4 @@ progress shown by progress bar
 1. game setup, load assets, create player
 create canvas
 create cube
+2.build level and title maps
