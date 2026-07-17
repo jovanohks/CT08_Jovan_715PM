@@ -21,3 +21,4 @@ adding more spikes,walls and orbs to the maps
 when player collides with wall or spike,reset game
 5. add start screen ad player menu
 start and end menu
+add finish line and end level
