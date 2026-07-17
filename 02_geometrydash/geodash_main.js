@@ -5,7 +5,7 @@ let bg;
 const TILE_SIZE=50;
 
 // world building groups
-let Tilemap1,
+let Tilemap1,ground,spike,orb,finishline;
 
 // image sprites
 
