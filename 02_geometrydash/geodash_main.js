@@ -17,7 +17,8 @@
 
 
 function preload() {
-    box=loadImage("assets/cube.png")
+    box=loadImage("assets/cube.png");
+    bg=load
 }
 
 function setup() {
