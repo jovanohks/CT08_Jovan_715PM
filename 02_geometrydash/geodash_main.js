@@ -24,8 +24,9 @@ function preload() {
 function setup() {
     new Canvas(700,600);
     world.gravity.y=32;
+    const TILE_SIZE=50;
     player=new Sprite(50,50,TILE_SIZE,TILE_SIZE);
-    player.img=box
+    player.img=box;
 }
 
 function draw() {
