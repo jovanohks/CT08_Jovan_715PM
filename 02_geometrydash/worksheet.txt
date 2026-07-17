@@ -7,3 +7,4 @@ players actions: space to jump
 goal: finish level
 progress shown by progress bar
 
+1. game setup, load assets, create player
