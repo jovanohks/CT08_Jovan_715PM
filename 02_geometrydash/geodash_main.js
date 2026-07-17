@@ -30,8 +30,8 @@ function setup() {
 }
 
 function draw() {
-    clear()
-    Image(bg,0,0,800,600)
+    clear();
+    Image(bg,0,0,800,600);
 
 }
 
