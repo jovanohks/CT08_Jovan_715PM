@@ -31,7 +31,8 @@ function setup() {
     player.bounciness=0;
     player.collider="none";
     startCoordinate=[50,height-TILE_SIZE/2];
-    player.x=
+    player.x=startCoordinate[0]
+    player.y=start
 }
 
 function draw() {
