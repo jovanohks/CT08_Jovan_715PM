@@ -17,7 +17,7 @@
 
 
 function preload() {
-
+    box=loadImage()
 }
 
 function setup() {
