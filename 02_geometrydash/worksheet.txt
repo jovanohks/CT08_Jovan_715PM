@@ -2,5 +2,5 @@ minecraft:
 1.kill ender dragon
 2.WASD,mouse keys,space,shift,number keys
 3.beat game when win,lose things when die
-objects: cube,ball,ufo,spider,robot,ship, sp
+objects: cube,ball,ufo,spider,robot,ship, spikes, block, 
 players actions: 
