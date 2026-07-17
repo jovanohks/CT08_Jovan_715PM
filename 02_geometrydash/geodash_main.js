@@ -29,7 +29,7 @@ function setup() {
     player.img=box;
     player.frction=0;
     player.bounciness=0;
-    player.collider=
+    player.collider="none";
 }
 
 function draw() {
