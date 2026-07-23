@@ -74,7 +74,7 @@ function draw() {
         player.vel.y=-10
     }
     camera.x=player.x
-    player.rotation=
+    player.rotateTo(player)
 
 }
 
