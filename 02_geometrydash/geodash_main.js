@@ -35,6 +35,8 @@ function setup() {
     player.x=startCoordinate[0];
     player.y=startCoordinate[1];
     ground= new Group()
+    ground.title="g"
+    ground.
 }
 
 function draw() {
