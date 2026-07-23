@@ -75,9 +75,11 @@ function draw() {
         player.rotateTo(player.rotation+359,15);
     }
     if (player.x >=width/2){
+        camera.x=player.x;
+    }else{
         
     }
-    camera.x=player.x;
+    
     
 
 }
