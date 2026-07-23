@@ -57,6 +57,7 @@ function setup() {
     finishLine=new Group();
     finishLine.tile="f";
     finishLine.w=TILE_SIZE;
+    finishLine.h=
 
     new Tiles(tileMap1,0,0,50,50);
 }
