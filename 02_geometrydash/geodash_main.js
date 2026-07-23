@@ -60,6 +60,7 @@ function setup() {
     finishLine.h=height*2;
     finishLine="static";
     finishLine.color="orange";
+    finishLine.visible=true;
     
 
     new Tiles(tileMap1,0,0,50,50);
