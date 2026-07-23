@@ -42,11 +42,12 @@ function setup() {
     ground.color="black";
     ground.collider="static";
     ground.stroke="black";
-    spikes=new Group()
-    spikes.tile=s
-    spikes.w=TILE_SIZE
-    spikes.h=TILE_SIZE
+    spikes=new Group();
+    spikes.tile=s;
+    spikes.w=TILE_SIZE;
+    spikes.h=TILE_SIZE;
     spikes.collider="static";
+    
     new Tiles(tileMap1,0,0,50,50);
 }
 
