@@ -56,6 +56,7 @@ function setup() {
     orbs.color="#fff53b";
     finishLine=new Group();
     finishLine.tile="f";
+    finishLine.w=TILE_SIZE;
     
     new Tiles(tileMap1,0,0,50,50);
 }
