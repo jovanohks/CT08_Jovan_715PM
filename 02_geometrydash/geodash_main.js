@@ -19,7 +19,7 @@ let Tilemap1,ground,spike,orb,finishline;
 function preload() {
     box=loadImage("assets/cube.png");
     bg=loadImage("assets/geobg.png");
-    tileMap1=loadStrings("tiles1.txt")
+    tileMap1=loadStrings("stages/tiles1.txt")
 }
 
 function setup() {
