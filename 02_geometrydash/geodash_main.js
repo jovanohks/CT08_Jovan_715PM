@@ -81,11 +81,11 @@ function draw() {
     if (player.x >=width/2){
         camera.x=player.x;
     }else{
-        camera.x=width/2
+        camera.x=width/2;
     }
     if (player.collides(spikes)){
         player.x=startCoordinate[0];
-        
+        player.y=startCoordinate[1];
     }
     
 
