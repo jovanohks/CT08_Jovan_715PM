@@ -20,7 +20,7 @@ function preload() {
     box=loadImage("assets/cube.png");
     bg=loadImage("assets/geobg.png");
     tileMap1=loadStrings("stages/tiles1.txt")
-    spike
+    spike=loadImage("assets/spikes.png")
 }
 
 function setup() {
