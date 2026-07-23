@@ -31,7 +31,7 @@ function setup() {
     player.img=box;
     player.frction=0;
     player.bounciness=0;
-    player.collider="none";
+    player.collider="dynamic";
     startCoordinate=[50,height-TILE_SIZE/2];
     player.x=startCoordinate[0];
     player.y=startCoordinate[1];
@@ -57,7 +57,7 @@ function setup() {
     finishLine=new Group();
     finishLine.tile="f";
     finishLine.w=TILE_SIZE;
-    
+
     new Tiles(tileMap1,0,0,50,50);
 }
 
