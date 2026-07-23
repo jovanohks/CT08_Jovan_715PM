@@ -43,7 +43,7 @@ function setup() {
     ground.collider="static";
     ground.stroke="black";
     spikes=new Group();
-    spikes.tile=s;
+    spikes.tile="s";
     spikes.w=TILE_SIZE;
     spikes.h=TILE_SIZE;
     spikes.collider="static";
