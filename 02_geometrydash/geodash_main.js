@@ -3,7 +3,7 @@ let bg;
 
 // game variables
 const TILE_SIZE=50;
-
+let playerjump=0;
 // world building groups
 let Tilemap1,ground,spike,orb,finishline;
 
