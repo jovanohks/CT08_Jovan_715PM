@@ -58,7 +58,7 @@ function setup() {
     finishLine.tile="f";
     finishLine.w=TILE_SIZE;
     finishLine.h=height*2;
-    finishLine="none";
+    finishLine.collider="static";
     finishLine.color="orange";
     finishLine.visible=true;
 
