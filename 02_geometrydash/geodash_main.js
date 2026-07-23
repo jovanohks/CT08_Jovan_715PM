@@ -61,7 +61,7 @@ function setup() {
     finishLine="static";
     finishLine.color="orange";
     finishLine.visible=true;
-    
+
 
     new Tiles(tileMap1,0,0,50,50);
 }
@@ -70,6 +70,7 @@ function draw() {
     clear();
     image(bg,0,0,800,600);
     player.vel.x=8;
+    player.vel.y=-8;
 
 }
 
