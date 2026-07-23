@@ -44,8 +44,8 @@ function setup() {
     ground.stroke="black";
     spikes=new Group()
     spikes.tile=s
-    spikes_width=TILE_SIZE
-    spikes.h=
+    spikes.w=TILE_SIZE
+    spikes.h=TILE_SIZE
     new Tiles(tileMap1,0,0,50,50);
 }
 
