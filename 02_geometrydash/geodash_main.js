@@ -40,7 +40,7 @@ function setup() {
     ground.h=TILE_SIZE;
     ground.color="black";
     ground.collider="static"
-    
+    ground.stroke="black"
 }
 
 function draw() {
