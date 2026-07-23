@@ -71,7 +71,7 @@ function draw() {
     image(bg,0,0,800,600);
     player.vel.x=8;
     if (kb.presses("space") || mouse.presses("left") && playerjump==0){
-        player.vel.y=-18;
+        player.vel.y=-8;
         player.rotateTo(player.rotation+359,15);
         playerjump ++;
     }
