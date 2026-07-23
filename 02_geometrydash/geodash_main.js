@@ -54,7 +54,7 @@ function setup() {
     orbs.collider="static";
     orbs.strokeWeight=0;
     orbs.color="#fff53b";
-    
+    finishLine
     new Tiles(tileMap1,0,0,50,50);
 }
 
