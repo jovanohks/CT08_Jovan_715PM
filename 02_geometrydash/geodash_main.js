@@ -77,7 +77,7 @@ function draw() {
     if (player.x >=width/2){
         camera.x=player.x;
     }else{
-        
+        camera.x=width/2
     }
     
     
