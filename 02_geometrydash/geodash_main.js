@@ -70,7 +70,9 @@ function draw() {
     clear();
     image(bg,0,0,800,600);
     player.vel.x=8;
-    
+    if (kb.presses(space)){
+        
+    }
 
 
 }
