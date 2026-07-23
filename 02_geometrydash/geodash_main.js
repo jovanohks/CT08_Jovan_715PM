@@ -84,7 +84,7 @@ function draw() {
         camera.x=width/2
     }
     if (player.collides(spikes)){
-        player=startCoordinate[0],startCoordinate[1]
+        player=(startCoordinate[0],startCoordinate[1])
     }
     
 
