@@ -73,7 +73,7 @@ function draw() {
     if (kb.presses("space") || mouse.presses("left") && playerjump==0){
         player.vel.y=-10;
         player.rotateTo(player.rotation+359,15);
-        
+        playerjump ++;
     }
     if (player.x >=width/2){
         camera.x=player.x;
