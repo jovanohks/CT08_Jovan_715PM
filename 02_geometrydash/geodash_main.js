@@ -52,7 +52,7 @@ function setup() {
     orbs.tile="o";
     orbs.d=24;
     orbs.collider="static";
-    
+    orbs.strokeWeight=0;
     new Tiles(tileMap1,0,0,50,50);
 }
 
