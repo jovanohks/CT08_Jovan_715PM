@@ -39,9 +39,9 @@ function setup() {
     ground.w=TILE_SIZE;
     ground.h=TILE_SIZE;
     ground.color="black";
-    ground.collider="static"
-    ground.stroke="black"
-    new Tiles(Tilemap1,0,0,50,50)
+    ground.collider="static";
+    ground.stroke="black";
+    new Tiles(tileMap1,0,0,50,50);
 }
 
 function draw() {
