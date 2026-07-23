@@ -41,6 +41,7 @@ function setup() {
     ground.color="black";
     ground.collider="static"
     ground.stroke="black"
+    new Tiles()
 }
 
 function draw() {
