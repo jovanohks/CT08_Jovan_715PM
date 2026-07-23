@@ -37,6 +37,8 @@ function setup() {
     ground= new Group();
     ground.title="g";
     ground.w=TILE_SIZE;
+    ground.h=TILE_SIZE;
+    
 }
 
 function draw() {
