@@ -58,7 +58,9 @@ function setup() {
     finishLine.tile="f";
     finishLine.w=TILE_SIZE;
     finishLine.h=height*2;
-    finish
+    finishLine="static";
+    finishLine.color="orange";
+    
 
     new Tiles(tileMap1,0,0,50,50);
 }
