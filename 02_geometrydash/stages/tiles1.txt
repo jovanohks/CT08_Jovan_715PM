@@ -7,7 +7,7 @@
 
 
                                       
-                                 o      g
+                                        g
                                  g      g
-                            g    g      g            f
+                            g    g      g             
 gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
