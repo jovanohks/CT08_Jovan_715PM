@@ -35,7 +35,7 @@ function setup() {
     player.x=startCoordinate[0];
     player.y=startCoordinate[1];
     ground= new Group();
-    ground.title="g";
+    ground.tile="g";
     ground.w=TILE_SIZE;
     ground.h=TILE_SIZE;
     ground.color="black";
