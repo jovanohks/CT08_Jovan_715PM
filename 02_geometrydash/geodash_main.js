@@ -46,6 +46,7 @@ function setup() {
     spikes.tile=s
     spikes.w=TILE_SIZE
     spikes.h=TILE_SIZE
+    spikes.collider="static";
     new Tiles(tileMap1,0,0,50,50);
 }
 
