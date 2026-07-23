@@ -73,7 +73,7 @@ function draw() {
     if (kb.presses("space") || mouse.presses("left")){
         player.vel.y=-8
     }
-
+    camera.x=player.x
 
 }
 
