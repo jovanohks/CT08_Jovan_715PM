@@ -50,6 +50,7 @@ function setup() {
     spikes.img=spike;
     orbs=new Group();
     orbs.tile="o";
+    orbs.d=24;
     
     new Tiles(tileMap1,0,0,50,50);
 }
