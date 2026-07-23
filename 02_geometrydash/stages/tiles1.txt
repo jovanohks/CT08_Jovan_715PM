@@ -6,8 +6,8 @@
 
 
 
-            o                          
-            g 
-        g s    g
-   s g    g      g   f          
-gggggggggggggggggggggggggggg
+                o                          
+                g 
+            g s    g
+    s g    g      g   f          
+ggggggggggggggggggggggggggggggggg
