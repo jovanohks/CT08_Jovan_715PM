@@ -79,7 +79,9 @@ function triggerGameOver(){
     if (!gameOver){
         gameOver=true;
         player.vel.x=0;
-        jump
+        jumpChance=0;
+        endTimer=frameCount;
+        
     }
 }
 function resetGame(){
