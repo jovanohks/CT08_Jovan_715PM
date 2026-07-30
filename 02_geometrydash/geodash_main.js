@@ -87,6 +87,9 @@ function draw() {
         player.x=startCoordinate[0];
         player.y=startCoordinate[1];
     }
+    for (let orb of orbs){
+        if (box.colliding(orb))
+    }
     
 
 }
