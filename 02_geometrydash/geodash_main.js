@@ -99,7 +99,7 @@ function draw() {
     }
 
     if (player.collides(ground)){
-        playerjump=0;
+        jumpChance=MAX_JUMP;
     }
     if (player.x >=width/2){
         camera.x=player.x;
