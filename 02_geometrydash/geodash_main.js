@@ -127,7 +127,8 @@ function draw() {
         }
     }
     if (!startGame && (mouse.presses()||kb.presses("space"))){
-        startGame.visible=false
+        startSprite.visible=false;
+        
     }
     
 
