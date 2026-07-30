@@ -66,10 +66,12 @@ function setup() {
     new Tiles(tileMap1,0,0,50,50);
 }
 function resetGame(){
+    player.x=startCoordinate[0];
+    player.y=startCoordinate[1];
     for (let orb of orbs){
         orbs.visible=true;
         orbs.collider="static";
-        
+
     }
 }
 function draw() {
