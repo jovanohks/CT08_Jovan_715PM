@@ -84,9 +84,11 @@ function draw() {
     player.vel.x=8;
     for (let tile of ground){
         if (box.colliding(tile)){
-            let leftEdge=tile.w-tile.h;
-            let leftEdgeHeight=tile.y-tile.h;
-            
+            let leftEdge=tile.w-tile.h/2;
+            let leftEdgeHeight=tile.y-tile.h/2;
+            if (box.x <leftEdge && box.y <leftEdgeHeight){
+
+            }
         }
     }
     if (kb.presses("space") || mouse.presses("left") && playerjump==0){
