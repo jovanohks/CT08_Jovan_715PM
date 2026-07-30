@@ -10,7 +10,9 @@ let playerjump=0;
 let Tilemap1,ground,spike,orb,finishline;
 
 // image sprites
-
+let startSprites;
+let endSprites;
+let 
 
 // menu
 
