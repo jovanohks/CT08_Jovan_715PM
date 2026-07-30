@@ -111,7 +111,7 @@ function draw() {
         player.y=startCoordinate[1];
     }
     for (let orb of orbs){
-        if (box.colliding(orb)){
+        if (player.collides(orb)){
             orb.visible=false;
             orb.collider="none";
             box.vel.y=-5;
