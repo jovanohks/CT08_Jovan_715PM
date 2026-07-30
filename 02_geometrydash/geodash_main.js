@@ -68,6 +68,8 @@ function setup() {
 function resetGame(){
     player.x=startCoordinate[0];
     player.y=startCoordinate[1];
+    player.rotation=0;
+    player.max
     for (let orb of orbs){
         orbs.visible=true;
         orbs.collider="static";
