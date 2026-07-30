@@ -87,6 +87,17 @@ function resetGame(){
     }
 }
 function draw() {
+    if (!startGame && (mouse.presses()||kb.presses("space"))){
+        startSprite.visible=false;
+        startGame=true;
+    }else if (!startGame){
+        if (frameCount %60 <30){
+            startSprite.visible=true;
+
+        }else{
+            startSprite.visible=false;
+        }
+    }
     if (startGame){
         clear();
         image(bg,0,0,800,600);
@@ -128,17 +139,7 @@ function draw() {
             }
         }
     }
-    if (!startGame && (mouse.presses()||kb.presses("space"))){
-        startSprite.visible=false;
-        startGame=true;
-    }else if (!startGame){
-        if (frameCount %60 <30){
-            startSprite.visible=true;
 
-        }else{
-            startSprite.visible=false;
-        }
-    }
     
 
 }
