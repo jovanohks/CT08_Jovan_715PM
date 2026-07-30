@@ -25,10 +25,10 @@ let endGameImg;
 function preload() {
     box=loadImage("assets/cube.png");
     bg=loadImage("assets/geobg.png");
-    tileMap1=loadStrings("stages/tiles1.txt")
-    spike=loadImage("assets/spike.png")
+    tileMap1=loadStrings("stages/tiles1.txt");
+    spike=loadImage("assets/spike.png");
+    startGameImg=loadImage('assets/startgame.png');
 }
-
 function setup() {
     new Canvas(700,600);
     world.gravity.y=32;
