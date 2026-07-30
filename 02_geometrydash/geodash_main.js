@@ -76,7 +76,9 @@ function setup() {
     new Tiles(tileMap1,0,0,50,50);
 }
 function triggerGameOver(){
-    
+    if (!gameOver){
+        
+    }
 }
 function resetGame(){
     player.x=startCoordinate[0];
