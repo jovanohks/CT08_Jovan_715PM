@@ -70,8 +70,8 @@ function setup() {
     finishLine.collider="static";
     finishLine.color="orange";
     finishLine.visible=true;
-    startSprite=new Sprite(width/2, height/2,190,90)
-    startSprite.img=startGameImg;;
+    startSprite=new Sprite(width/2, height/2,190,90);
+    startSprite.img=startGameImg;
 
     new Tiles(tileMap1,0,0,50,50);
 }
