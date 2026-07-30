@@ -67,7 +67,8 @@ function setup() {
 }
 function resetGame(){
     for (let orb of orbs){
-        
+        orbs.visible=true;
+        orbs.
     }
 }
 function draw() {
