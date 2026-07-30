@@ -12,7 +12,9 @@ let Tilemap1,ground,spike,orb,finishline;
 // image sprites
 let startSprites;
 let endSprites;
-let 
+let startGameImg;
+let endGameImg;
+
 
 // menu
 
