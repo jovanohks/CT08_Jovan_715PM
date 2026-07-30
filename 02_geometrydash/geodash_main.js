@@ -87,45 +87,7 @@ function resetGame(){
     }
 }
 function draw() {
-    clear();
-    image(bg,0,0,800,600);
-    player.vel.x=8;
-    for (let tile of ground){
-        if (player.collides(tile)){
-            let leftEdge=tile.w-tile.h/2;
-            let leftEdgeHeight=tile.y-tile.h/2;
-            if (player.x <leftEdge && player.y <leftEdgeHeight){
-                resetGame();
-                break;
-            }
-        }
-    }
-    if (kb.presses("space") || mouse.presses("left") && jumpChance>0){
-        player.vel.y=-10;
-        player.rotateTo(player.rotation+359,15);
-        playerjump -=1;
-    }
-
-    if (player.collides(ground)){
-        jumpChance=MAX_JUMP;
-    }
-    if (player.x >=width/2){
-        camera.x=player.x;
-    }else{
-        camera.x=width/2;
-    }
-    if (player.collides(spikes)){
-        player.x=startCoordinate[0];
-        player.y=startCoordinate[1];
-    }
-    for (let orb of orbs){
-        if (player.collides(orb)){
-            orb.visible=false;
-            orb.collider="none";
-            box.vel.y=-5;
-            jumpChance=MAX_JUMP
-        }
-    }
+    if
     if (!startGame && (mouse.presses()||kb.presses("space"))){
         startSprite.visible=false;
         startGame=true;
