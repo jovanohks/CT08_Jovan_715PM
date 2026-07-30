@@ -128,7 +128,9 @@ function draw() {
     }
     if (!startGame && (mouse.presses()||kb.presses("space"))){
         startSprite.visible=false;
-        
+        startGame=true;
+    }else if (!startGame){
+        if (frameCount %60 <30){}
     }
     
 
