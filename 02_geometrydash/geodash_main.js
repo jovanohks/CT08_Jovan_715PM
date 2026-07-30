@@ -78,6 +78,7 @@ function setup() {
 function triggerGameOver(){
     if (!gameOver){
         gameOver=true;
+        player.vel.x=0;
 
     }
 }
