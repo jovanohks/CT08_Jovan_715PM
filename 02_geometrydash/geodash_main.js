@@ -68,7 +68,8 @@ function setup() {
 function resetGame(){
     for (let orb of orbs){
         orbs.visible=true;
-        orbs.
+        orbs.collider="static";
+        
     }
 }
 function draw() {
