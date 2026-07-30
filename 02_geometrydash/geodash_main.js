@@ -93,9 +93,9 @@ function draw() {
         }
     }
     if (kb.presses("space") || mouse.presses("left") && jumpChance>0){
-        player.vel.y=-8;
+        player.vel.y=-10;
         player.rotateTo(player.rotation+359,15);
-        playerjump ++;
+        playerjump -=1;
     }
 
     if (player.collides(ground)){
