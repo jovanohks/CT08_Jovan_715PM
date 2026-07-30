@@ -84,6 +84,7 @@ function draw() {
     player.vel.x=8;
     for (let tile of ground){
         if (box.colliding(tile)){
+            let leftEdge=tile.w-tile.h;
             
         }
     }
