@@ -65,7 +65,11 @@ function setup() {
 
     new Tiles(tileMap1,0,0,50,50);
 }
-
+function resetGame(){
+    for (let orb of orbs){
+        
+    }
+}
 function draw() {
     clear();
     image(bg,0,0,800,600);
