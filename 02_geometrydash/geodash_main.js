@@ -85,6 +85,7 @@ function draw() {
     for (let tile of ground){
         if (box.colliding(tile)){
             let leftEdge=tile.w-tile.h;
+            let leftEdgeHeight=tile.y-tile.h;
             
         }
     }
