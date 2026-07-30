@@ -10,8 +10,8 @@ let playerjump=0;
 let Tilemap1,ground,spike,orb,finishline;
 
 // image sprites
-let startSprites;
-let endSprites;
+let startSprite;
+let endSprite;
 let startGameImg;
 let endGameImg;
 
@@ -69,7 +69,7 @@ function setup() {
     finishLine.color="orange";
     finishLine.visible=true;
     startSprite=new Sprite(width/2, height/2,190,90)
-    startSprites
+    startSprite.img=startGameImg
 
     new Tiles(tileMap1,0,0,50,50);
 }
