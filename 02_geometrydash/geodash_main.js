@@ -15,7 +15,7 @@ let endSprite;
 let startGameImg;
 let endGameImg;
 
-
+let start
 // menu
 
 
