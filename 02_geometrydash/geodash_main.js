@@ -83,10 +83,10 @@ function draw() {
     image(bg,0,0,800,600);
     player.vel.x=8;
     for (let tile of ground){
-        if (box.colliding(tile)){
+        if (player.collides(tile)){
             let leftEdge=tile.w-tile.h/2;
             let leftEdgeHeight=tile.y-tile.h/2;
-            if (box.x <leftEdge && box.y <leftEdgeHeight){
+            if (player.x <leftEdge && box.y <leftEdgeHeight){
                 resetGame();
                 break;
             }
