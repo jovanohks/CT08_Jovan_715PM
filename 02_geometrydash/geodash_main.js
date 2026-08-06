@@ -161,6 +161,7 @@ function draw() {
             let particle = new Sprite(box.x,box.y+box.h/2 ,8,8,"none");
             particle.color="white";
             particle.strokeweight=0;
+            particle.vel.x=-5;
             
 
         }
