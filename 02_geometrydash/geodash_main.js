@@ -164,6 +164,9 @@ function draw() {
         clear();
         image(bg,0,0,800,600);
         player.vel.x=8;
+        if (background.elt.paused){
+            
+        }
         if (framecount %3 ===0 && box.colliding(ground) &&box.vel.x>=0.5){
             box.rotation=0;
             let particle = new Sprite(box.x,box.y+box.h/2 ,8,8,"none");
