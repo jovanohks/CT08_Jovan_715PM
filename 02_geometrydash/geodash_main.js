@@ -140,6 +140,7 @@ function resetGame(){
     particles.removeAll();
     if (lost){
         failsound.play()
+        backgroundtrack.stop()
     }
     for (let orb of orbs){
         orbs.visible=true;
