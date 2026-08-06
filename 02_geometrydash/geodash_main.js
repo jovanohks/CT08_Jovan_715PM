@@ -199,6 +199,7 @@ function draw() {
             camera.x=width/2;
         }
         if (player.collides(spikes)){
+            lost=true;
             player.x=startCoordinate[0];
             player.y=startCoordinate[1];
         }
