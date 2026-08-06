@@ -158,7 +158,7 @@ function draw() {
         player.vel.x=8;
         if (framecount %3 ===0 && box.colliding(ground) &&box.vel.x>=0.5){
             box.rotation=0;
-            let particle = new Sprite(box.x,)
+            let particle = new Sprite(box.x,box.y+box.h/2 ,)
 
         }
         for (let tile of ground){
