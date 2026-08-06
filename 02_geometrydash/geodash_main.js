@@ -19,6 +19,7 @@ let endGameImg;
 let startGame=false;
 let endGame=false;
 let mapUsed;
+let particles;
 // menu
 
 
