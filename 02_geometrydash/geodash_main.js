@@ -36,6 +36,7 @@ function preload() {
     timeMap2=loadStrings('stages/tiles2.txt');
     backgroundtrack=createAudio("assets/stereo-madness.mp3");
     failsound=createAudio("assets/geometry-dash-death-sound.mp3");
+    startsound=createAudio("assets/game-start.mp3");
     
 }
 
