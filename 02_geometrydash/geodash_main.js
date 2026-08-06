@@ -138,6 +138,9 @@ function resetGame(){
     player.rotation=0;
     playerJump=0;
     particles.removeAll();
+    if (lost){
+        failsound.play()
+    }
     for (let orb of orbs){
         orbs.visible=true;
         orbs.collider="static";
