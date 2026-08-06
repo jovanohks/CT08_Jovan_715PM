@@ -35,7 +35,8 @@ function preload() {
     endGameImg=loadImage('assets/clear.png');
     timeMap2=loadStrings('stages/tiles2.txt');
     backgroundtrack=createAudio("assets/stereo-madness.mp3");
-    failsound=createAudio("assets/geometry-dash-death")
+    failsound=createAudio("assets/geometry-dash-death-sound.mp3");
+    
 }
 
 function drawBackground() {
