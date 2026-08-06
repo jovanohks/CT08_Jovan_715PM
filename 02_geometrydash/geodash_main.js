@@ -157,6 +157,7 @@ function draw() {
         image(bg,0,0,800,600);
         player.vel.x=8;
         if (framecount %3 ===0 && box.colliding(ground) &&box.vel.x>=0.5){
+            box.rotation=0;
             
         }
         for (let tile of ground){
