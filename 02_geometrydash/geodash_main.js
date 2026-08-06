@@ -119,7 +119,7 @@ function triggerGameOver(){
         player.vel.x=0;
         jumpChance=0;
         endTimer=frameCount;
-        if (endSprite()){
+        if (endSprite){
             endSprite.remove();
         }
         endSprite=new Sprite(player.x,height/2,126,24);
