@@ -37,7 +37,7 @@ function preload() {
     backgroundtrack=createAudio("assets/stereo-madness.mp3");
     failsound=createAudio("assets/geometry-dash-death-sound.mp3");
     startsound=createAudio("assets/game-start.mp3");
-    
+
 }
 
 function drawBackground() {
@@ -175,6 +175,7 @@ function draw() {
         }
         for (let tile of ground){
             if (player.collides(tile)){
+                lost=true;
                 let leftEdge=tile.w-tile.h/2;
                 let leftEdgeHeight=tile.y-tile.h/2;
                 if (player.x <leftEdge && player.y <leftEdgeHeight){
