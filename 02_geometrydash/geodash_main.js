@@ -156,7 +156,7 @@ function draw() {
         clear();
         image(bg,0,0,800,600);
         player.vel.x=8;
-        if (framecount %3 ===0)
+        if (framecount %3 ===0 && box.colliding(ground) &&box.)
         for (let tile of ground){
             if (player.collides(tile)){
                 let leftEdge=tile.w-tile.h/2;
