@@ -95,6 +95,7 @@ function setup() {
     startSprite.img=startGameImg;
 
     new Tiles(tileMap1,0,0,50,50);
+    mapused=tileMap1;
 }
 function loadLevel(){
     ground.removeAll();
@@ -118,7 +119,7 @@ function triggerGameOver(){
         player.vel.x=0;
         jumpChance=0;
         endTimer=frameCount;
-        if endSprite(){
+        if (endSprite()){
             endSprite.remove();
         }
         endSprite=new Sprite(player.x,height/2,126,24);
@@ -150,6 +151,7 @@ function draw() {
         }
     }
     if (startGame){
+        drawBackground();
         clear();
         image(bg,0,0,800,600);
         player.vel.x=8;
@@ -189,8 +191,8 @@ function draw() {
                 jumpChance=MAX_JUMP
             }
         }
-        if (player.collides(finishLine){
-            triggerGameOver()
+        if (player.collides(finishLine)){
+            triggerGameOver();
         }
         if (gameOver){
             if (frameCount-endTimer>120){
