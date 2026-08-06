@@ -133,6 +133,7 @@ function resetGame(){
     player.y=startCoordinate[1];
     player.rotation=0;
     playerJump=0;
+    particles.removeAll();
     for (let orb of orbs){
         orbs.visible=true;
         orbs.collider="static";
