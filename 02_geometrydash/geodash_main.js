@@ -33,8 +33,8 @@ function preload() {
     spike=loadImage("assets/spike.png");
     startGameImg=loadImage('assets/startgame.png');
     endGameImg=loadImage('assets/clear.png');
-    timeMap2=loadStrings('stages/tiles2.txt')l
-    backgroundtrack=createAudio("assets/stereo-madness.mp3")
+    timeMap2=loadStrings('stages/tiles2.txt');
+    backgroundtrack=createAudio("assets/stereo-madness.mp3");
 }
 
 function drawBackground() {
