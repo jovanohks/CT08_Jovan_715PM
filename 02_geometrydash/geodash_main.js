@@ -7,8 +7,9 @@ const MAX_JUMP=1;
 let jumpChance=MAX_JUMP;
 let playerjump=0;
 // world building groups
-let Tilemap1,ground,spike,orb,finishline;
-
+let Tilemap1,ground,spike,orb,finishline,timeMap2;
+let level=1;
+let lastlevel=2;
 // image sprites
 let startSprite;
 let endSprite;
@@ -17,7 +18,7 @@ let endGameImg;
 
 let startGame=false;
 let endGame=false;
-
+let mapUsed;
 // menu
 
 
@@ -31,6 +32,26 @@ function preload() {
     spike=loadImage("assets/spike.png");
     startGameImg=loadImage('assets/startgame.png');
     endGameImg=loadImage('assets/clear.png');
+    timeMap2=loadStrings('stages/tiles2.txt')
+}
+
+function drawBackground() {
+
+  let lastRow = mapUsed[mapUsed.length - 1]; //Get the final row of the current tile map.
+  let numCols = lastRow.length; //Count how many tiles are in the row.
+  let totalJourney = numCols * 50; //each tile is around 50px. this gives the total length
+
+  let progress = map(box.x, 0, totalJourney, -100, 0);
+
+  let c1 = color("#9933ff"); //colours for lerping
+  let c2 = color("#4169e1");
+
+  let amt = (sin(frameCount * 0.5) + 1) / 2; //Create a value that repeatedly changes between 0 and 1.
+  let blend = lerpColor(c1, c2, amt); //lerp between two colours
+
+  tint(blend); //turn on the tint
+  image(bg, progress, 0, 800, 600); //draw and move background 
+  noTint(); //remove tint on all other objects
 }
 function setup() {
     new Canvas(700,600);
@@ -75,13 +96,34 @@ function setup() {
 
     new Tiles(tileMap1,0,0,50,50);
 }
+function loadLevel(){
+    ground.removeAll();
+    sharp.removeAll();
+    orbs.removeAll();
+    finishline.removeAll();
+    if (lastlevel <level){
+        level=1;
+
+    }
+    if (level===1){
+        new Tiles(tileMap1,0,0,50,50);
+
+    }else if (level ===2){
+        new Tiles(tileMap2,0,0,50,50);
+    }
+}
 function triggerGameOver(){
     if (!gameOver){
         gameOver=true;
         player.vel.x=0;
         jumpChance=0;
         endTimer=frameCount;
-        
+        if endSprite(){
+            endSprite.remove();
+        }
+        endSprite=new Sprite(player.x,height/2,126,24);
+        endSprite.collider="none";
+        endSprite.img=endGameImg;
     }
 }
 function resetGame(){
@@ -145,6 +187,21 @@ function draw() {
                 orb.collider="none";
                 box.vel.y=-5;
                 jumpChance=MAX_JUMP
+            }
+        }
+        if (player.collides(finishLine){
+            triggerGameOver()
+        }
+        if (gameOver){
+            if (frameCount-endTimer>120){
+                if (endSprite){
+                    endSprite.remove();
+                }
+                startGame=false;
+                gameOver=false;
+                resetGame();
+                level+=1;
+                loadLevel();
             }
         }
     }
