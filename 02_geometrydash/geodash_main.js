@@ -164,6 +164,7 @@ function draw() {
             particle.vel.x=-5;
             particle.vel.y=random(-2,0);
             particle.life=30;
+            particles.add(particle);
             
 
         }
