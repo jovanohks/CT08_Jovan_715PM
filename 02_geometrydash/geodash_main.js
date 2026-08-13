@@ -221,7 +221,7 @@ function draw() {
             if (player.collides(orb)){
                 orb.visible=false;
                 orb.collider="none";
-                box.vel.y=-5;
+                player.vel.y=-5;
                 jumpChance=MAX_JUMP
             }
         }
