@@ -20,6 +20,7 @@ let startGame=false;
 let endGame=false;
 let mapUsed;
 let particles;
+let gameOver;
 // menu
 
 
