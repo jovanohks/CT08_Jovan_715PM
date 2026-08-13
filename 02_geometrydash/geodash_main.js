@@ -176,7 +176,7 @@ function draw() {
             backgroundtrack.play();
         }
         if (frameCount %3 ===0 && player.collides(ground) &&player.vel.x>=0.5){
-            box.rotation=0;
+            player.rotation=0;
             let particle = new Sprite(player.x,player.y+player.h/2 ,8,8,"none");
             particle.color="white";
             particle.strokeweight=0;
