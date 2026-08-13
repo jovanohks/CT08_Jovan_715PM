@@ -46,7 +46,8 @@ function gotHands(results){
 
 }
 function draw() {
-    Image(video,)
+    Image(video,0,0,videoW,videoH);
+    
 }
 
 //=========================================
