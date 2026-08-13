@@ -85,7 +85,7 @@ function setup() {
     startSprite.collider="none"
     particles= new Group();
     new Tiles(tileMap1,0,0,50,50);
-    mapused=tileMap1;
+    mapUsed=tileMap1;
 }
 function drawBackground() {
 
