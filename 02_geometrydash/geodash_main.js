@@ -115,6 +115,7 @@ function loadLevel(){
 
     }
     if (level===1){
+        mapUsed = 
         new Tiles(tileMap1,0,0,50,50);
 
     }else if (level ===2){
