@@ -88,7 +88,7 @@ function setup() {
 }
 function drawBackground() {
 
-  //let lastRow = mapUsed[mapUsed.length - 1]; //Get the final row of the current tile map.
+  let lastRow = mapUsed[mapUsed.length - 1]; //Get the final row of the current tile map.
   let numCols = lastRow.length; //Count how many tiles are in the row.
   let totalJourney = numCols * 50; //each tile is around 50px. this gives the total length
 
