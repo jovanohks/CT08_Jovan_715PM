@@ -115,11 +115,12 @@ function loadLevel(){
 
     }
     if (level===1){
-        mapUsed = 
         new Tiles(tileMap1,0,0,50,50);
+        mapUsed = tileMap1;
 
     }else if (level ===2){
         new Tiles(tileMap2,0,0,50,50);
+        mapUsed = tileMap2;
     }
 }
 function triggerGameOver(){
