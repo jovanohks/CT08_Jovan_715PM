@@ -8,11 +8,11 @@ let handpose;
 
 function preload() {
     let options = {
-        flipped=true,
-        runtime="tfjs",
-        modelType="full",
+        flipped:true,
+        runtime:"tfjs",
+        modelType:"full",
         detectorModelUrl:"undefined",
-        landmarkModelUrl:"undefined"
+        landmarkModelUrl:"undefined",
 
     }
 }
