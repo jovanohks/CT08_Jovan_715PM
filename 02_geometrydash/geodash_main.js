@@ -171,7 +171,7 @@ function draw() {
         clear();
         image(bg,0,0,800,600);
         player.vel.x=8;
-        if (background.elt.paused){
+        if (backgroundtrack.elt.paused){
             backgroundtrack.play();
         }
         if (framecount %3 ===0 && box.colliding(ground) &&box.vel.x>=0.5){
