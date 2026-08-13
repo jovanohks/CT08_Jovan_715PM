@@ -7,7 +7,9 @@ let handpose;
 //=========================================
 
 function preload() {
-    
+    let options = {
+        
+    }
 }
 
 function setup() {}
