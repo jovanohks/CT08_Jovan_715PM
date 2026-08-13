@@ -35,6 +35,7 @@ function setup() {
 
         flipped:true,
     }
+    video=createCapture(constraints);
     
 }
 
