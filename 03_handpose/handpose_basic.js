@@ -36,6 +36,8 @@ function setup() {
         flipped:true,
     }
     video=createCapture(constraints);
+    video.size=(640,480);
+    video.hide();
     
 }
 
