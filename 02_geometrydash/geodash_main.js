@@ -108,7 +108,7 @@ function drawBackground() {
 }
 function loadLevel(){
     ground.removeAll();
-    sharp.removeAll();
+    spikes.removeAll();
     orbs.removeAll();
     finishline.removeAll();
     if (lastlevel <level){
