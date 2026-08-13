@@ -45,7 +45,9 @@ function gotHands(results){
     hands=results;
 
 }
-function draw() {}
+function draw() {
+    Image(video,)
+}
 
 //=========================================
 // Function Created
