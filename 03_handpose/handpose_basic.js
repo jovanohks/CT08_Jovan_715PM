@@ -1,6 +1,7 @@
 //=========================================
 // Variables
 //=========================================
+let hands=[]
 let handpose;
 let videoW=640;
 let videoH=480
@@ -42,7 +43,7 @@ function setup() {
 }
 function gotHands(results){
     hands=results;
-    
+
 }
 function draw() {}
 
