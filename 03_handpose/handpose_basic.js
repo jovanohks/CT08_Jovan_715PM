@@ -16,6 +16,7 @@ function preload() {
 
     }
     handPose=ml5.handPose(options);
+    
 }
 
 function setup() {}
