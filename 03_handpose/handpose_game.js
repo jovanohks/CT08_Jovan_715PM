@@ -55,7 +55,7 @@ function draw() {
             circle(keypoint.x,keypoint.y,10)
         }
         let k=hand.keypoints[8];
-        
+        circle(k.x,k.y);
     }   
 
 }
