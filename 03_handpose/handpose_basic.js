@@ -2,7 +2,7 @@
 // Variables
 //=========================================
 let hands=[]
-let handpose;
+let handPose;
 let videoW=640;
 let videoH=480
 //=========================================
