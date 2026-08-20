@@ -4,7 +4,8 @@
 let hands=[]
 let handPose;
 let videoW=640;
-let videoH=480
+let videoH=480;
+let video;
 //=========================================
 // Code
 //=========================================
