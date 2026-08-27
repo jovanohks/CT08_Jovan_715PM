@@ -90,11 +90,11 @@ let balloon;
 function preload() {
 // Create options for model settings
 let options = {
-flipped: true,
-runtime: "tfjs",
-modelType: "full",
-detectorModelUrl: undefined, //default to use the tf.hub model
-landmarkModelUrl: undefined //default to use the tf.hub model
+    flipped: true,
+    runtime: "tfjs",
+    modelType: "full",
+    detectorModelUrl: undefined, //default to use the tf.hub model
+    landmarkModelUrl: undefined //default to use the tf.hub model
 }
 
 // Load the handPose model
