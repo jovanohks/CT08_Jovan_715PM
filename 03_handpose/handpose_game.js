@@ -1,73 +1,79 @@
-//=========================================
-// Variables
-//=========================================
-let hands=[]
-let handPose;
-let videoW=640;
-let videoH=480;
-let video;
-//=========================================
-// Code
-//=========================================
+// //=========================================
+// // Variables
+// //=========================================
+// let hands=[]
+// let handPose;
+// let videoW=640;
+// let videoH=480;
+// let video;
+// //=========================================
+// // Code
+// //=========================================
 
-function preload() {
-    let options = {
-        flipped:true,
-        runtime:"tfjs",
-        modelType:"full",
-        detectorModelUrl:undefined,
-        landmarkModelUrl:undefined,
+// function preload() {
+//     let options = {
+//         flipped:true,
+//         runtime:"tfjs",
+//         modelType:"full",
+//         detectorModelUrl:undefined,
+//         landmarkModelUrl:undefined,
 
-    };
-    handPose=ml5.handPose(options);
+//     };
+//     handPose=ml5.handPose(options);
 
-}
-function gotHands(results){
-    hands=results;
+// }
+// function gotHands(results){
+//     hands=results;
 
-}
-function setup() {
-    createCanvas(videoW,videoH);
-    let constraints={
-        video:{
-            mandatory:{
-                minWidth:videoW,
-                minHeight:videoH
-            },
-            optional: [{minFrameRate:60}],
-        },
-        audio: false,
+// }
+// function setup() {
+//     createCanvas(videoW,videoH);
+//     let constraints={
+//         video:{
+//             mandatory:{
+//                 minWidth:videoW,
+//                 minHeight:videoH
+//             },
+//             optional: [{minFrameRate:60}],
+//         },
+//         audio: false,
 
-        flipped:true,
-    }
-    video=createCapture(constraints);
-    video.size=(640,480);
+//         flipped:true,
+//     }
+//     video=createCapture(constraints);
+//     video.size=(640,480);
 
-    handPose.detectStart(video,gotHands);
-}
+//     handPose.detectStart(video,gotHands);
+//     fingertip=new Sprite();
+//     fingertip.diameter=60;
+//     fingertip.collider="kinematic";
+//     fingertip.color="rgba(0,255,0,0.05)";
+//     fingertip.x=keypoint.x;
+//     fingertip.y=keypoint.y;
+// }
 
-function draw() {
-    image(video,0,0,videoW,videoH);
-    for (let i=0; i<hands.length; i++){
-        let hand=hands[i];
-        // for (let j=0; j<hand.keypoints.length; j++){
-        //     let keypoint=hand.keypoints[j];
-        //     circle(keypoint.x,keypoint.y,10)
-        // }
-        let k=hand.keypoints[8];
-        circle(k.x,k.y,10);
-        k=hand.keypoints[4];
-        circle(k.x,k.y,10);
-        k=hand.keypoints[12];
-        circle(k.x,k.y,10);
-        k=hand.keypoints[16];
-        circle(k.x,k.y,10);
-        k=hand.keypoints[20];
-        circle(k.x,k.y,10);
-    }   
+// function draw() {
+//     image(video,0,0,videoW,videoH);
+//     for (let i=0; i<hands.length; i++){
+//         let hand=hands[i];
+//         // for (let j=0; j<hand.keypoints.length; j++){
+//         //     let keypoint=hand.keypoints[j];
+//         //     circle(keypoint.x,keypoint.y,10)
+//         // }
+//         let k=hand.keypoints[8];
+//         circle(k.x,k.y,10);
+//         k=hand.keypoints[4];
+//         circle(k.x,k.y,10);
+//         k=hand.keypoints[12];
+//         circle(k.x,k.y,10);
+//         k=hand.keypoints[16];
+//         circle(k.x,k.y,10);
+//         k=hand.keypoints[20];
+//         circle(k.x,k.y,10);
+//     }   
 
-}
+// }
 
-//=========================================
-// Function Created
-//=========================================
+// //=========================================
+// // Function Created
+// //=========================================
