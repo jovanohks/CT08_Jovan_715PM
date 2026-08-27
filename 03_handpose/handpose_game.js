@@ -15,10 +15,10 @@ function preload() {
         flipped:true,
         runtime:"tfjs",
         modelType:"full",
-        detectorModelUrl:"undefined",
-        landmarkModelUrl:"undefined",
+        detectorModelUrl:undefined,
+        landmarkModelUrl:undefined,
 
-    }
+    };
     handPose=ml5.handPose(options);
 
 }
@@ -55,6 +55,14 @@ function draw() {
         //     circle(keypoint.x,keypoint.y,10)
         // }
         let k=hand.keypoints[8];
+        circle(k.x,k.y,10);
+        k=hand.keypoints[4];
+        circle(k.x,k.y,10);
+        k=hand.keypoints[12];
+        circle(k.x,k.y,10);
+        k=hand.keypoints[16];
+        circle(k.x,k.y,10);
+        k=hand.keypoints[20];
         circle(k.x,k.y,10);
     }   
 

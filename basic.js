@@ -36,6 +36,9 @@ function setup(){
         text(item,200,ypos);
         ypos+=20;
     }
+    for (let i=2; i<20; i+=2;){
+        console.log(i);
+    }
 }
 function draw(){
 
