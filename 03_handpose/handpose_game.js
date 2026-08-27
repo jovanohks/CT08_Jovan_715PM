@@ -143,9 +143,9 @@ let hand = hands[i]; // current hand (left or right)
 let keypoint = hand.keypoints[8];
 
 // for every keypoint, draw a circle.
-fingerTip.x = keypoint.x;
+        fingerTip.x = keypoint.x;
 fingerTip.y = keypoint.y;
-}
+    }
 }
 
 // Callback function for when handPose outputs data
