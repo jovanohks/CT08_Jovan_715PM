@@ -132,7 +132,7 @@ fingerTip.color = "rgba(0, 255, 0, 0.05)";
 
 function draw() {
 // Draw the webcam video
-image(video, 0, 0, videoW, videoH);
+    image(video, 0, 0, videoW, videoH);
 
 // Draw all the tracked hand points
 // Loop through all the hands detected (can detect left or right)
@@ -143,8 +143,8 @@ image(video, 0, 0, videoW, videoH);
         let keypoint = hand.keypoints[8];
 
     // for every keypoint, draw a circle.
-            fingerTip.x = keypoint.x;
-            fingerTip.y = keypoint.y;
+        fingerTip.x = keypoint.x;
+        fingerTip.y = keypoint.y;
     }
 }
 
