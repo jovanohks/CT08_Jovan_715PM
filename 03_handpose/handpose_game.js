@@ -89,16 +89,16 @@ let balloon;
 
 function preload() {
 // Create options for model settings
-let options = {
-    flipped: true,
-    runtime: "tfjs",
-    modelType: "full",
-    detectorModelUrl: undefined, //default to use the tf.hub model
-    landmarkModelUrl: undefined //default to use the tf.hub model
-}
+    let options = {
+        flipped: true,
+        runtime: "tfjs",
+        modelType: "full",
+        detectorModelUrl: undefined, //default to use the tf.hub model
+        landmarkModelUrl: undefined //default to use the tf.hub model
+    }
 
-// Load the handPose model
-handPose = ml5.handPose(options);
+    // Load the handPose model
+    handPose = ml5.handPose(options);
 }
 
 function setup() {
