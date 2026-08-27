@@ -107,10 +107,10 @@ createCanvas(videoW, videoH);
 let constraints = {
     video: {
         mandatory: {
-        minWidth: videoW,
-        minHeight: videoH,
+            minWidth: videoW,
+            minHeight: videoH,
         },
-        optional: [{ minFrameRate: 60 }],
+            optional: [{ minFrameRate: 60 }],
         },
         audio: false,
         flipped: true // makes the video mirrored
