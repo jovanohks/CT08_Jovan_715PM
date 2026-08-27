@@ -140,11 +140,11 @@ for (let i = 0; i < hands.length; i++) {
 let hand = hands[i]; // current hand (left or right)
 
 // Keypoint 8 = INDEX_FINGER_TIP
-let keypoint = hand.keypoints[8];
+    let keypoint = hand.keypoints[8];
 
 // for every keypoint, draw a circle.
         fingerTip.x = keypoint.x;
-fingerTip.y = keypoint.y;
+        fingerTip.y = keypoint.y;
     }
 }
 
