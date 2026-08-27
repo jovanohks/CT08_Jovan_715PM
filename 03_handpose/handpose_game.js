@@ -105,29 +105,29 @@ function setup() {
 createCanvas(videoW, videoH);
 
 let constraints = {
-video: {
-mandatory: {
-minWidth: videoW,
-minHeight: videoH,
-},
-optional: [{ minFrameRate: 60 }],
-},
-audio: false,
-flipped: true // makes the video mirrored
-};
+    video: {
+        mandatory: {
+        minWidth: videoW,
+        minHeight: videoH,
+        },
+        optional: [{ minFrameRate: 60 }],
+        },
+        audio: false,
+        flipped: true // makes the video mirrored
+    };
 
-// Create the webcam video and hide it
-video = createCapture(constraints);
-video.size(640, 480);
-video.hide();
-// start detecting hands from the webcam video + model
-handPose.detectStart(video, gotHands);
+    // Create the webcam video and hide it
+    video = createCapture(constraints);
+    video.size(640, 480);
+    video.hide();
+    // start detecting hands from the webcam video + model
+    handPose.detectStart(video, gotHands);
 
-// Game sprite
-fingerTip = new Sprite();
-fingerTip.diameter = 60;
-fingerTip.collider = "kinematic"
-fingerTip.color = "rgba(0, 255, 0, 0.05)";
+    // Game sprite
+    fingerTip = new Sprite();
+    fingerTip.diameter = 60;
+    fingerTip.collider = "kinematic"
+    fingerTip.color = "rgba(0, 255, 0, 0.05)";
 }
 
 function draw() {
