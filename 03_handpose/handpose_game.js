@@ -102,18 +102,18 @@ handPose = ml5.handPose(options);
 }
 
 function setup() {
-createCanvas(videoW, videoH);
+    createCanvas(videoW, videoH);
 
-let constraints = {
-    video: {
-        mandatory: {
-            minWidth: videoW,
-            minHeight: videoH,
+    let constraints = {
+        video: {
+            mandatory: {
+                minWidth: videoW,
+                minHeight: videoH,
+            },
+                optional: [{ minFrameRate: 60 }],
         },
-            optional: [{ minFrameRate: 60 }],
-    },
-        audio: false,
-        flipped: true // makes the video mirrored
+            audio: false,
+            flipped: true // makes the video mirrored
     };
 
     // Create the webcam video and hide it
