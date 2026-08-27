@@ -111,7 +111,7 @@ let constraints = {
             minHeight: videoH,
         },
             optional: [{ minFrameRate: 60 }],
-        },
+    },
         audio: false,
         flipped: true // makes the video mirrored
     };
