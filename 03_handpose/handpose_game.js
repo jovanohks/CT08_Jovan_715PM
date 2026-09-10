@@ -159,7 +159,7 @@ function setup() {
     floor1.width=2000;
     floor1.height=20;
     floor1.x=0;
-    floor1.y=500;
+    floor1.y=-20;
     floor1.collider="static";
      
 }
