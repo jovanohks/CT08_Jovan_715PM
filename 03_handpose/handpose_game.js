@@ -168,7 +168,9 @@ function setup() {
 function keyPressed(){
     if (key==="space"){
         gameStarted=true;
-        
+        balloon.collider="dynamic";
+        balloon.bounciness=0.8;
+        balloon.mass=
     }
 }
 function draw() {
