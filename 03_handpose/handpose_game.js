@@ -155,7 +155,13 @@ function setup() {
     wall2.x=660;
     wall2.y=0;
     wall2.collider="static";
-    
+    floor = new Sprite();
+    floor.width=2000;
+    floor.height=20;
+    floor.x=0;
+    floor.y=500;
+    floor.collider="static";
+     
 }
 
 function draw() {
