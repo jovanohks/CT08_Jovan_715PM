@@ -173,7 +173,7 @@ function draw() {
         textSize(28);
         textAlign(CENTER,CENTER );
         fill("rgb(0,255,20)");
-        
+        text("bounce the ball",wi)
     }
 // Draw all the tracked hand points
 // Loop through all the hands detected (can detect left or right)
