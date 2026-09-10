@@ -170,7 +170,7 @@ function draw() {
 // Draw the webcam video
     image(video, 0, 0, videoW, videoH);
     if (gameStarted===false){
-        textSize(28)
+        textSize(28);
         textAli
     }
 // Draw all the tracked hand points
