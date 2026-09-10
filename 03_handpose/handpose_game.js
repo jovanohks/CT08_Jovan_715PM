@@ -165,15 +165,6 @@ function setup() {
     floor1.collider="static";
      
 }
-function keyPressed(){
-    if (key==="space"){
-        gameStarted=true;
-        balloon.collider="dynamic";
-        balloon.bounciness=0.8;
-        balloon.mass=5;
-        balloon.drag=0.2;
-    }
-}
 function draw() {
 // Draw the webcam video
     image(video, 0, 0, videoW, videoH);
