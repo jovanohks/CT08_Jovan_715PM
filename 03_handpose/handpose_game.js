@@ -133,7 +133,8 @@ function setup() {
     balloon.height=height/2;
     balloon.diameter=80;
     balloon.collider="dynamic";
-    balloon.color="rgba(255,"
+    balloon.color="rgba(255,255,0,0.9)";
+    
 }
 
 function draw() {
