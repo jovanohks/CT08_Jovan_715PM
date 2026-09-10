@@ -155,6 +155,7 @@ function setup() {
     wall2.x=660;
     wall2.y=0;
     wall2.collider="static";
+    
 }
 
 function draw() {
