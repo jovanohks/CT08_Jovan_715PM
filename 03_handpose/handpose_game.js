@@ -137,8 +137,8 @@ function setup() {
     balloon.collider="none";
     balloon.color="rgba(255,255,0,0.9)";
     world.gravity.y=5;
-    balloon.bounciness=0.5;
-    balloon.mass=5;
+    //balloon.bounciness=0.5;
+    //balloon.mass=5;
     floor = new Sprite();
     floor.width=2000;
     floor.height=20;
