@@ -143,6 +143,8 @@ function setup() {
     floor.x=0;
     floor.y=500;
     floor.collider="static";
+    wall1= new Sprite();
+    
 }
 
 function draw() {
