@@ -147,6 +147,7 @@ function setup() {
     wall1.width=20;
     wall1.height=2000;
     wall1.x=0
+    wall1.y=0
     wall1.height=0;
     wall1.collider="static";
 }
