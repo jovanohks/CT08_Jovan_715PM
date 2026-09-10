@@ -134,7 +134,7 @@ function setup() {
     balloon.x=width/2;
     balloon.height=3*height;
     balloon.diameter=80;
-    balloon.collider="dynamic";
+    balloon.collider="none";
     balloon.color="rgba(255,255,0,0.9)";
     world.gravity.y=5;
     balloon.bounciness=0.5;
