@@ -165,7 +165,9 @@ function setup() {
     floor1.collider="static";
      
 }
-
+function keyPressed(){
+    if (key==="space")
+}
 function draw() {
 // Draw the webcam video
     image(video, 0, 0, videoW, videoH);
