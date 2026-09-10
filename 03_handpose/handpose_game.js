@@ -176,7 +176,9 @@ function draw() {
         text("bounce the ball",width/2,height*0.1);
         textSize(32);
         text("Use index finger to bounce the ball!",width/2, height*0.2);
-        text("Press space to start game")
+        text("Press space to start game",width/2,height*0.3)
+    }else{
+        
     }
 // Draw all the tracked hand points
 // Loop through all the hands detected (can detect left or right)
