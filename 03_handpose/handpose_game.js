@@ -142,6 +142,7 @@ function setup() {
     floor.height=20;
     floor.x=0;
     floor.y=620;
+    floor.collider="static";
 }
 
 function draw() {
