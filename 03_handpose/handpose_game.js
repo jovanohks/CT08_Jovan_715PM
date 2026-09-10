@@ -144,6 +144,8 @@ function setup() {
     floor.y=500;
     floor.collider="static";
     wall1= new Sprite();
+    wall1.width=20;
+    wall1.height=2000;
     
 }
 
