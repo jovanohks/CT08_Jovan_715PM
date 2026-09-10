@@ -138,7 +138,9 @@ function setup() {
     balloon.bounciness=0.5;
     balloon.mass=5;
     floor = new Sprite();
-    
+    floor.width=2000;
+    floor.height=20;
+    floor.x=
 }
 
 function draw() {
