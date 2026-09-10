@@ -172,7 +172,8 @@ function draw() {
     if (gameStarted===false){
         textSize(28);
         textAlign(CENTER,CENTER );
-        fill()
+        fill("rgb(0,255,20)");
+        
     }
 // Draw all the tracked hand points
 // Loop through all the hands detected (can detect left or right)
