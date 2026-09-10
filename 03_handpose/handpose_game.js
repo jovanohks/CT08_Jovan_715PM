@@ -166,7 +166,10 @@ function setup() {
      
 }
 function keyPressed(){
-    if (key==="space")
+    if (key==="space"){
+        gameStarted=true;
+        
+    }
 }
 function draw() {
 // Draw the webcam video
