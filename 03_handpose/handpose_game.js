@@ -151,7 +151,7 @@ function setup() {
     wall2= new Sprite();
     wall2.width=20;
     wall2.height=2000;
-    wall2.x=620;
+    wall2.x=760;
     wall2.y=0;
     wall2.collider="static";
 }
