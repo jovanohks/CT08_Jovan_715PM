@@ -86,6 +86,8 @@ let hands = []; // global variable to store hands
 // Game sprites
 let fingerTip;
 let balloon;
+let gameStart=false;
+let gameOver=false;
 
 function preload() {
 // Create options for model settings
