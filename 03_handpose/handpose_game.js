@@ -140,7 +140,8 @@ function setup() {
     floor = new Sprite();
     floor.width=2000;
     floor.height=20;
-    floor.x=
+    floor.x=0;
+    floor.y=620;
 }
 
 function draw() {
