@@ -170,7 +170,8 @@ function keyPressed(){
         gameStarted=true;
         balloon.collider="dynamic";
         balloon.bounciness=0.8;
-        balloon.mass=
+        balloon.mass=5;
+        balloon.drag=0.2;
     }
 }
 function draw() {
