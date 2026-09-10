@@ -148,12 +148,12 @@ function setup() {
     wall1.height=2000;
     wall1.x=-20;
     wall1.y=0;
-    wall2= new Sprite();
-    wall2.width=20;
-    wall2.height=2000;
-    wall2.x=660;
-    wall2.y=0;
-    wall2.collider="static";
+   leftwall = new Sprite();
+   leftwall.width=20;
+   leftwall.height=2000;
+   leftwall.x=660;
+   leftwall.y=0;
+   leftwall.collider="static";
 }
 
 function draw() {
