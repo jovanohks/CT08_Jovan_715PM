@@ -148,7 +148,7 @@ function setup() {
     wall1.height=2000;
     wall1.x=0
     wall1.height=0;
-    wall1.collider="static"
+    wall1.collider="static";
 }
 
 function draw() {
