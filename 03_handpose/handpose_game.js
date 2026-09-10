@@ -170,10 +170,12 @@ function draw() {
 // Draw the webcam video
     image(video, 0, 0, videoW, videoH);
     if (gameStarted===false){
-        textSize(28);
+        textSize(40);
         textAlign(CENTER,CENTER );
         fill("rgb(0,255,20)");
         text("bounce the ball",width/2,height*0.1);
+        textSize(32);
+        
     }
 // Draw all the tracked hand points
 // Loop through all the hands detected (can detect left or right)
