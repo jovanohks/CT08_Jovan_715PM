@@ -135,7 +135,8 @@ function setup() {
     balloon.collider="dynamic";
     balloon.color="rgba(255,255,0,0.9)";
     world.gravity.y=5;
-    balloon.bounciness=
+    balloon.bounciness=0.5;
+    balloon.mass=5;
 }
 
 function draw() {
