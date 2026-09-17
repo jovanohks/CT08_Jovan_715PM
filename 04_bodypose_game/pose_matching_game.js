@@ -56,7 +56,8 @@ function setup() {
     // start detecting hands from the webcam video + model
 
 
-    new Canvas(cameraWidth,totalCanvasWidth)
+    new Canvas(cameraWidth,totalCanvasWidth);
+    
     // Set up text.
     textAlign(CENTER, CENTER);
 }
