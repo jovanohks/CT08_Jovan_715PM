@@ -101,7 +101,7 @@ function preload() {
 
     // Load the handPose model
     handPose = ml5.handPose(options);
-    boingsound=preload()
+    boingsound=createAudio('assets/')
 }
 
 function setup() {
