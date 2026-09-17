@@ -238,6 +238,7 @@ function keyPressed(){
         balloon.y=height*0.4;
         balloon.vel.x=0;
         balloon.vel.y=0;
+        fingerTip.collider="kinematic"
         
     }
 }
