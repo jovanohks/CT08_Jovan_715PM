@@ -37,7 +37,25 @@ function preload(){
 
 // setup() runs once at the start.
 function setup() {
-    
+    let constraints = {
+        video: {
+            mandatory: {
+                minWidth: videoW,
+                minHeight: videoH,
+            },
+                optional: [{ minFrameRate: 60 }],
+        },
+            audio: false,
+            flipped: true // makes the video mirrored
+    };
+
+    // Create the webcam video and hide it
+    video = createCapture(constraints);
+    video.size(640, 480);
+    video.hide();
+    // start detecting hands from the webcam video + model
+
+
     new Canvas(width,outerHeight)
     // Set up text.
     textAlign(CENTER, CENTER);
