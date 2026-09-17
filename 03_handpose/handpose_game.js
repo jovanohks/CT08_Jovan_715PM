@@ -201,6 +201,10 @@ function draw() {
         fingerTip.x = keypoint.x;
         fingerTip.y = keypoint.y;
     }
+    if (fingerTip.collides(balloon)){
+        boingsound.Play();
+
+    }
 }
 
 // Callback function for when handPose outputs data
