@@ -213,6 +213,8 @@ function draw() {
     if (gameOver ===true){
         balloon.collider="static";
         
+        textSize(40);
+        textAlign(CENTER,CENTER );
 
     }
 }
