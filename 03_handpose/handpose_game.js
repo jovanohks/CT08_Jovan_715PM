@@ -213,10 +213,10 @@ function draw() {
     }
     if (gameOver ===true){
         balloon.collider="static";
-        
+        gameoversound.play();
         textSize(40);
         textAlign(CENTER,CENTER );
-        text("Game over")
+        text("Game over");
     }
 }
 
