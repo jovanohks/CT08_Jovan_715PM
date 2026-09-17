@@ -210,6 +210,9 @@ function draw() {
     if (bounceCooldown >0){
         bounceCooldown -=deltaTime;
     }
+    if (gameOver ===true){
+        balloon.c
+    }
 }
 
 // Callback function for when handPose outputs data
