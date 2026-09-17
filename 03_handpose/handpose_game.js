@@ -227,10 +227,12 @@ function gotHands(results) {
 }
 function keyPressed(){
     if (key===" "){
+        score =0;
         gameStarted=true;
         balloon.collider="dynamic";
         balloon.bounciness=0.8;
         balloon.mass=5;
         balloon.drag=0.2;
+        
     }
 }
