@@ -234,6 +234,7 @@ function keyPressed(){
         balloon.mass=5;
         balloon.drag=0.2;
         balloon.visible=true;
-        
+        balloon.x=width/2
+        balloon.y=height*0.4;
     }
 }
