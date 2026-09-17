@@ -213,7 +213,7 @@ function gotHands(results) {
     hands = results;
 }
 function keyPressed(){
-    if (key==="space"){
+    if (key===" "){
         gameStarted=true;
         balloon.collider="dynamic";
         balloon.bounciness=0.8;
