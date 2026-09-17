@@ -88,7 +88,7 @@ let fingerTip;
 let balloon;
 let gameStarted=false;
 let gameOver=false;
-
+let bounceCooldown;
 function preload() {
 // Create options for model settings
     let options = {
@@ -164,6 +164,7 @@ function setup() {
     floor1.x=0;
     floor1.y=-20;
     floor1.collider="static";
+    bounceCooldown=200;
      
 }
 function draw() {
