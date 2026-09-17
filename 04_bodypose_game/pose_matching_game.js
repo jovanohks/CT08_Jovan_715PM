@@ -37,7 +37,7 @@ function preload(){
 
 // setup() runs once at the start.
 function setup() {
-    new Canvas()
+    new Canvas(width,)
     // Set up text.
     textAlign(CENTER, CENTER);
 }
