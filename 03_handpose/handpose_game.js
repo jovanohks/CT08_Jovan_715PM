@@ -88,7 +88,7 @@ let fingerTip;
 let balloon;
 let gameStarted=false;
 let gameOver=false;
-let bounceCooldown;
+let bounceCooldown;1
 function preload() {
 // Create options for model settings
     let options = {
