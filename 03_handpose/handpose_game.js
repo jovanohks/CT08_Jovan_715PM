@@ -201,8 +201,9 @@ function draw() {
         fingerTip.x = keypoint.x;
         fingerTip.y = keypoint.y;
     }
-    if (fingerTip.collides(balloon)){
+    if (fingerTip.collides(balloon)&& bounceCooldown <=0){
         boingsound.play();
+        bounceCooldown=200;
 
     }
     if (bounceCooldown >0){
