@@ -37,6 +37,8 @@ function preload(){
 
 // setup() runs once at the start.
 function setup() {
+   
+    new Canvas(cameraWidth,totalCanvasWidth);
     let constraints = {
         video: {
             mandatory: {
@@ -55,9 +57,7 @@ function setup() {
     video.hide();
     // start detecting hands from the webcam video + model
 
-
-    new Canvas(cameraWidth,totalCanvasWidth);
-    
+ 
     // Set up text.
     textAlign(CENTER, CENTER);
 }
