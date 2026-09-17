@@ -206,7 +206,7 @@ function draw() {
 
     }
     if (bounceCooldown >0){
-        
+        bounceCooldown -=deltaTime;
     }
 }
 
