@@ -211,7 +211,8 @@ function draw() {
         bounceCooldown -=deltaTime;
     }
     if (gameOver ===true){
-        balloon.c
+        balloon.collider="static";
+        
     }
 }
 
