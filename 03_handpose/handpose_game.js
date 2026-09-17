@@ -205,6 +205,9 @@ function draw() {
         boingsound.play();
 
     }
+    if (bounceCooldown >0){
+        
+    }
 }
 
 // Callback function for when handPose outputs data
