@@ -202,7 +202,7 @@ function draw() {
         fingerTip.y = keypoint.y;
     }
     if (fingerTip.collides(balloon)){
-        boingsound.Play();
+        boingsound.lay();
 
     }
 }
