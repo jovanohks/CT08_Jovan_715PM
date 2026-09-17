@@ -213,6 +213,7 @@ function draw() {
     if (gameOver ===true){
         balloon.collider="static";
         
+
     }
 }
 
