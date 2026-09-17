@@ -233,6 +233,7 @@ function keyPressed(){
         balloon.bounciness=0.8;
         balloon.mass=5;
         balloon.drag=0.2;
+        balloon.visible=true;
         
     }
 }
