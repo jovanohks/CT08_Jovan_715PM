@@ -128,5 +128,5 @@ function drawMiddleLine() {
     line(width / 2, 0, width / 2, cameraHeight);
 }
 function gotHands(results){
-    hands=results
+    hands=results;
 }
