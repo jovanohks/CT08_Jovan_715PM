@@ -130,3 +130,6 @@ function drawMiddleLine() {
 function gotPoses(results){
     detectedPeople=results;
 }
+function drawDetectionStatus(){
+    
+}
