@@ -134,5 +134,6 @@ function gotPoses(results){
 function drawDetectionStatus(){
     fill(0);
     textSize(24);
+    
 
 }
