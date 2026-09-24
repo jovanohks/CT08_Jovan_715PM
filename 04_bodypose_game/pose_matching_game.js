@@ -61,7 +61,7 @@ function setup() {
  
     // Set up text.
     textAlign(CENTER, CENTER);
-    bodyPose.detectStart)
+    bodyPose.detectStart(video,gotPoses);
 }
 
 
