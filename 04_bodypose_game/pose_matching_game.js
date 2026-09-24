@@ -89,6 +89,55 @@ function draw() {
         circle(x,y,50);
     }
 }
+function drawSkeleton(person, skeletonColor) {
+    // Set skeleton line colour.
+    stroke(skeletonColor);
+
+    // Set skeleton line thickness.
+    strokeWeight(3);
+
+    // Draw shoulder line.
+    drawBodyLine(person.left_shoulder, person.right_shoulder);
+
+    // Draw left upper arm.
+    drawBodyLine(person.left_shoulder, person.left_elbow);
+
+    // Draw left lower arm.
+    drawBodyLine(person.left_elbow, person.left_wrist);
+
+    // Draw right upper arm.
+    drawBodyLine(person.right_shoulder, person.right_elbow);
+
+    // Draw right lower arm.
+    drawBodyLine(person.right_elbow, person.right_wrist);
+
+    // Draw left body side.
+    drawBodyLine(person.left_shoulder, person.left_hip);
+
+    // Draw right body side.
+    drawBodyLine(person.right_shoulder, person.right_hip);
+
+    // Draw hip line.
+    drawBodyLine(person.left_hip, person.right_hip);
+
+    // Remove outlines for the body point circles.
+    noStroke();
+
+    // Set circle colour.
+    fill(skeletonColor);
+
+    // Draw important body points.
+    drawBodyPoint(person.nose);
+    drawBodyPoint(person.left_shoulder);
+    drawBodyPoint(person.right_shoulder);
+    drawBodyPoint(person.left_elbow);
+    drawBodyPoint(person.right_elbow);
+    drawBodyPoint(person.left_wrist);
+    drawBodyPoint(person.right_wrist);
+    drawBodyPoint(person.left_hip);
+    drawBodyPoint(person.right_hip);
+}
+
 function drawAllskeletons(){
     for (let i =0; i < detectedPeople.length;i++){
         let person=detectedPeople[i]
