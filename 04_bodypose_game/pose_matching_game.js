@@ -163,7 +163,7 @@ function pointIsReady(point){
 }
 function drawBodyLine(point1,point2){
     if (pointIsReady(point1)) {
-        line(point1.x+cameraX,point1.y,)       
+        line(point1.x+cameraX,point1.y,point2.x+cameraX,point2.y)       
     }
 }
 
