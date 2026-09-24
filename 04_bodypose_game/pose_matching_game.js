@@ -61,6 +61,7 @@ function setup() {
  
     // Set up text.
     textAlign(CENTER, CENTER);
+    bodyPose.detectStart)
 }
 
 
@@ -133,5 +134,5 @@ function gotPoses(results){
 function drawDetectionStatus(){
     fill(0);
     textSize(24);
-    
+
 }
