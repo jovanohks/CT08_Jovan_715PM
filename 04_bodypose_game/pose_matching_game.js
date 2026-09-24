@@ -28,7 +28,7 @@ let rightPanelX = sidePanelWidth + cameraWidth;
 // ====================================================
 
 function preload(){
-    bodyPose=ml5.bodyPose
+    bodyPose=ml5.bodyPose("MoveNet", {flipped:true})
 }
 
 // ====================================================
