@@ -22,7 +22,7 @@ let leftPanelX = 0;
 
 // x-position of the right panel.
 let rightPanelX = sidePanelWidth + cameraWidth;
-let skeletonColour
+let skeletonColour;
 // ====================================================
 // Preload
 // ====================================================
@@ -62,6 +62,7 @@ function setup() {
     // Set up text.
     textAlign(CENTER, CENTER);
     bodyPose.detectStart(video,gotPoses);
+    skeletonColour
 }
 
 
