@@ -85,7 +85,7 @@ function draw() {
         let x=person.nose.x+cameraX;
         let y=person.nose.y;
         fill(255,0,0);
-        
+        circle(x,y,50);
     }
 }
 
