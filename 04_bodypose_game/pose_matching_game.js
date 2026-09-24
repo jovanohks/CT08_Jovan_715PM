@@ -176,7 +176,9 @@ function drawUIPanel() {
 }
 
 function drawBodyLine(point1,point2){
-    
+    if (pointIsReady(point1)){
+        
+    }
 }
 // ====================================================
 // Draw middle divider line
