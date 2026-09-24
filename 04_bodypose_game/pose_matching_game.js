@@ -166,6 +166,9 @@ function drawBodyLine(point1,point2){
         line(point1.x+cameraX,point1.y,point2.x+cameraX,point2.y)       
     }
 }
+function drawBodyPoint(point){
+    
+}
 
 function drawUIPanel() {
     // Remove outlines.
