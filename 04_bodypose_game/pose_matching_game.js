@@ -82,7 +82,7 @@ function draw() {
     drawDetectionStatus()
     if (detectedPeople.length >0){
         let person=detectedPeople[0];
-        let x=person.nose.x+2*cameraX;
+        let x=person.nose.x+1.5*cameraX;
         let y=person.nose.y;
         fill(255,0,0);
         circle(x,y,50);
