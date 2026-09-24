@@ -82,8 +82,9 @@ function draw() {
     drawDetectionStatus()
     if (detectedPeople.length >0){
         let person=detectedPeople[0];
-        let x=person.nose.x;
+        let x=person.nose.x+cameraX;
         let y=person.nose.y;
+        
     }
 }
 
