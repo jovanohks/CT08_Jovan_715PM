@@ -156,7 +156,9 @@ function pointIsReady(point){
 
     }
     if (point.confidence >0.25){
-        
+        return true;
+    }else{
+        return false;
     }
 }
 function drawBodyLine(point1,point2){
