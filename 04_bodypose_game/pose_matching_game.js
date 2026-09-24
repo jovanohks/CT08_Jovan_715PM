@@ -175,7 +175,9 @@ function drawUIPanel() {
     line(rightPanelX, 0, rightPanelX, cameraHeight);
 }
 
-
+function drawBodyLine(point1,point2){
+    
+}
 // ====================================================
 // Draw middle divider line
 // ====================================================
