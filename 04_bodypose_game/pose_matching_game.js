@@ -79,6 +79,7 @@ function draw() {
     drawMiddleLine();
 
     image(video,cameraX,0,cameraWidth,cameraHeight);
+    drawDetectionStatus()
 }
 
 // ====================================================
