@@ -80,7 +80,10 @@ function draw() {
 
     image(video,cameraX,0,cameraWidth,cameraHeight);
     drawDetectionStatus()
-    if (detectedPeople.length >0)
+    if (detectedPeople.length >0){
+        let person=detectedpeople[0];
+        
+    }
 }
 
 // ====================================================
