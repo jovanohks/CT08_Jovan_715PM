@@ -29,7 +29,7 @@ let rightPanelX = sidePanelWidth + cameraWidth;
 
 function preload(){
     bodyPose=ml5.bodyPose("MoveNet", {flipped:true});
-    
+
 }
 
 // ====================================================
@@ -126,4 +126,7 @@ function drawMiddleLine() {
 
     // Draw the middle line inside the webcam area.
     line(width / 2, 0, width / 2, cameraHeight);
+}
+function gotHands(results){
+    hands=results
 }
