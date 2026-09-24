@@ -149,6 +149,13 @@ function drawAllskeletons(){
 // ====================================================
 
 // Draws the left and right UI panels.
+
+function drawBodyLine(point1,point2){
+    if (pointIsReady(point1)){
+        
+    }
+}
+
 function drawUIPanel() {
     // Remove outlines.
     noStroke();
@@ -175,11 +182,6 @@ function drawUIPanel() {
     line(rightPanelX, 0, rightPanelX, cameraHeight);
 }
 
-function drawBodyLine(point1,point2){
-    if (pointIsReady(point1)){
-        
-    }
-}
 // ====================================================
 // Draw middle divider line
 // ====================================================
