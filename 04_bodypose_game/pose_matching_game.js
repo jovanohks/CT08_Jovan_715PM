@@ -90,7 +90,9 @@ function draw() {
     }
 }
 function drawAllskeletons(){
-    for (let i =0; i < detectedPeople.length;i++)
+    for (let i =0; i < detectedPeople.length;i++){
+        
+    }
 }
 // ====================================================
 // Draw side UI panels
