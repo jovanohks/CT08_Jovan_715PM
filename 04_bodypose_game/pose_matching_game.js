@@ -134,6 +134,7 @@ function gotPoses(results){
 function drawDetectionStatus(){
     fill(0);
     textSize(24);
-    text("People detected: "+detectedPeople.length,width/2,)
+    text("People detected: "+detectedPeople.length,width/2,height*0.1);
+    console.log(detectedPeople);
 
 }
