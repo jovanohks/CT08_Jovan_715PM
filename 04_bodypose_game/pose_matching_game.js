@@ -151,7 +151,7 @@ function drawAllskeletons(){
 // Draws the left and right UI panels.
 
 function drawBodyLine(point1,point2){
-    if (pointIsReady(point1)){
+    if (pointIsReady(point1)) {
         
     }
 }
