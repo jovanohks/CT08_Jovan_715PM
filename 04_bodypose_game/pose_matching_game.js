@@ -257,6 +257,6 @@ function findPlayers(){
 }
 function drawPlayerSkeletons(){
     if (player1Person != null){
-        
+        drawSkeleton(player1Person,player1colour);
     }
 }
