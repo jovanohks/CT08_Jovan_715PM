@@ -230,5 +230,5 @@ function findPlayers(){
     player2Person = null;
     let player1Distance=Number.MAX_VALUE;
     let player2Distance=Number.MAX_VALUE;
-    let player1CenterX
+    let player1CenterX = player1
 }
