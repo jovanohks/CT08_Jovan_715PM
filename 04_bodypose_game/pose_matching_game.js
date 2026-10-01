@@ -92,7 +92,8 @@ function draw() {
         fill(255,0,0);
         circle(x,y,50);
     }
-    drawPlayerSkeletons()
+    findPlayers();
+    drawPlayerSkeletons();
 }
 function drawSkeleton(person, skeletonColor) {
     // Set skeleton line colour.
