@@ -226,5 +226,6 @@ function drawDetectionStatus(){
 
 }
 function findPlayers(){
-    
+    player1Person = null;
+    player2Person = null;
 }
