@@ -239,7 +239,7 @@ function findPlayers(){
         if (pointIsReady(nose)){
             let noseX=nose.x+cameraX;
             if (noseX <cameraCenterX){
-                
+                let distanceFromPlayer1Center
             }
         }
     }
