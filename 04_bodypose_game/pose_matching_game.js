@@ -266,5 +266,8 @@ function drawPlayerSkeletons(){
 }
 function drawPlayerStatus(){
     noStroke();
-    
+    textSize(28);
+    if (player1Person !=null){
+        
+    }
 }
