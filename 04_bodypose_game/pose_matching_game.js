@@ -255,5 +255,5 @@ function findPlayers(){
     }
 }
 function drawSkeleton(){
-
+    if (player1Person !=)
 }
