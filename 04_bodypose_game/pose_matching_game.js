@@ -259,4 +259,7 @@ function drawPlayerSkeletons(){
     if (player1Person != null){
         drawSkeleton(player1Person,player1colour);
     }
+    if (player2Person != null){
+        drawSkeleton(player1Person,player1colour);
+    }
 }
