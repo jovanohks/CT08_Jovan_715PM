@@ -64,8 +64,9 @@ function setup() {
     // Set up text.
     textAlign(CENTER, CENTER);
     bodyPose.detectStart(video,gotPoses);
-    skeletonColour = color(255,255,0)
-    player1colour=color(255,0,0)
+    skeletonColour = color(255,255,0);
+    player1colour=color(255,0,0);
+    player2colour=color(0,0,255);
 }
 
 
