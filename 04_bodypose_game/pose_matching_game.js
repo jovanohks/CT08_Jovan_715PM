@@ -28,7 +28,7 @@ let player2Person;
 let BothHandsUpImage;
 let leftHandsUpImage;
 let rightHandsUpImage;
-let BothHandsUpImage;
+let handsonheadImage;
 // ====================================================
 // Preload
 // ====================================================
