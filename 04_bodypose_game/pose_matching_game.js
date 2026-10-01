@@ -65,6 +65,7 @@ function setup() {
     textAlign(CENTER, CENTER);
     bodyPose.detectStart(video,gotPoses);
     skeletonColour = color(255,255,0)
+    player1colour=color(255,0,0)
 }
 
 
@@ -253,5 +254,5 @@ function findPlayers(){
     }
 }
 function drawSkeleton(){
-    
+
 }
