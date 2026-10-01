@@ -23,6 +23,8 @@ let leftPanelX = 0;
 // x-position of the right panel.
 let rightPanelX = sidePanelWidth + cameraWidth;
 let skeletonColour;
+let player1Person;
+let player2Person;
 // ====================================================
 // Preload
 // ====================================================
