@@ -248,7 +248,7 @@ function findPlayers(){
             }
         }else{
             let distanceFromPlayer2Center = abs(noseX-player2CenterX);
-            
         }
+
     }
 }
