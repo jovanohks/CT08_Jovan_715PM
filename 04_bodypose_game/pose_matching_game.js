@@ -242,7 +242,7 @@ function findPlayers(){
                 let distanceFromPlayer1Center = abs(noseX-player1CenterX);
                 if (distanceFromPlayer1Center < closetplyer1Distance){
                     player1Person = person;
-                    player
+                    closestPlayer1Distance=
                 }
 
             }
