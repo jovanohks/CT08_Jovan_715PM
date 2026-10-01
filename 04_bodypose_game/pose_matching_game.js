@@ -225,3 +225,6 @@ function drawDetectionStatus(){
     console.log(detectedPeople);
 
 }
+function findPlayers(){
+    
+}
