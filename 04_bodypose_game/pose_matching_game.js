@@ -234,6 +234,7 @@ function findPlayers(){
     let player2CenterX = cameraWidth /4 *3 +cameraX;
     let cameraCenterX =cameraWidth /2;
     for (let i=0; i<detectedPeople.length; i++){
-        
+        let person=detectedPeople[i];
+        let nose=person.nose
     }
 }
