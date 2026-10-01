@@ -25,6 +25,7 @@ let rightPanelX = sidePanelWidth + cameraWidth;
 let skeletonColour;
 let player1Person;
 let player2Person;
+let BothHandsUpImage;
 
 // ====================================================
 // Preload
