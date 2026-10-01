@@ -247,7 +247,7 @@ function findPlayers(){
 
             }
         }else{
-            let distance
+            let distanceFromPlayer2Center
         }
     }
 }
