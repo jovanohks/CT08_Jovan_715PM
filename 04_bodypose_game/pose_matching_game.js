@@ -252,3 +252,6 @@ function findPlayers(){
 
     }
 }
+function drawSkeleton(){
+    
+}
