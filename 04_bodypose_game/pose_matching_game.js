@@ -238,6 +238,9 @@ function findPlayers(){
         let nose=person.nose;
         if (pointIsReady(nose)){
             let noseX=nose.x+cameraX;
+            if (noseX <cameraCenterX){
+                
+            }
         }
     }
 }
