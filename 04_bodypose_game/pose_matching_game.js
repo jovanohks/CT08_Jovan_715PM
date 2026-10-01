@@ -272,6 +272,7 @@ function drawPlayerStatus(){
         text("Detected", leftPanelCenterX,height /2);
     }
     if (player2Person !=null){
-
+        fill(player2colour);
+        text("Detected")
     }
 }
