@@ -246,6 +246,8 @@ function findPlayers(){
                 }
 
             }
+        }else{
+            let distance
         }
     }
 }
