@@ -331,3 +331,6 @@ function drawGameUI(){
     text(currentpose.name,width/2,height*0.1);
     drawTargetPose(currentpose.image,width/2,height*0.9,230);
 }
+function keyPressed(){
+    if (key ==="1")
+}
