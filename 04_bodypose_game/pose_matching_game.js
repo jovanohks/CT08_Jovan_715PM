@@ -281,6 +281,9 @@ function drawPlayerStatus(){
     if (player1Person !=null){
         fill(255);
         text("Detected", leftPanelCenterX,height /2);
+        if (checkCurrentPose(player2Person)===true){
+            
+        }
     }
     if (player2Person !=null){
         fill(player2colour);
