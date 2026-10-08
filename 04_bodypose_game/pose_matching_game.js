@@ -333,6 +333,11 @@ function drawGameUI(){
 }
 function keyPressed(){
     if (key ==="1"){
-        
+        currentpose=posearray[0];
+    }
+    if (key ==="1"){
+        currentpose=posearray[0];
+    }    if (key ==="1"){
+        currentpose=posearray[0];
     }
 }
