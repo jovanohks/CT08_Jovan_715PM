@@ -288,7 +288,7 @@ function setupposearray(){
         {
             name:"Both hands up",
             image:BothHandsUpImage,
-            id:
+            id:"bothHandsUp"
         }
     ]
 }
