@@ -316,3 +316,6 @@ function setupposearray(){
         }
     ]
 }
+function drawTargetPose(poseImage,x,y,size){
+    
+}
