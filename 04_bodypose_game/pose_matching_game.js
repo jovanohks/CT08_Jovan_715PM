@@ -324,5 +324,5 @@ function drawTargetPose(poseImage,x,y,size){
 function drawGameUI(){
     fill(255,220,80);
     textSize(28);
-    text();
+    text(currentpose.name,height,);
 }
