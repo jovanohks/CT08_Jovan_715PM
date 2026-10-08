@@ -335,16 +335,16 @@ function keyPressed(){
     if (key ==="1"){
         currentpose=posearray[0];
     }
-    if (key ==="1"){
+    if (key ==="2"){
         currentpose=posearray[1];
     }    
-    if (key ==="1"){
+    if (key ==="3"){
         currentpose=posearray[2];
     }
-    if (key ==="1"){
+    if (key ==="4"){
         currentpose=posearray[3];
     }
-    if (key ==="1"){
+    if (key ==="5"){
         currentpose=posearray[4];
     }
 }
