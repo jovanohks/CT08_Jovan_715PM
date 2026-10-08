@@ -286,7 +286,9 @@ function drawPlayerStatus(){
 function setupposearray(){
     posearray = [
         {
-            name:""
+            name:"Both hands up",
+            image:BothHandsUpImage,
+            id:
         }
     ]
 }
