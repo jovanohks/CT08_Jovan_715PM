@@ -605,10 +605,10 @@ function checkCurrentPose(person){
     if (currentpose.id ==="bothHandsUp" ){
         return checkBothHandsUp(person);
     }
-    if (currentpose.id ==="bothHandsup" ){
+    if (currentpose.id ==="rightHandsUp" ){
         return checkBothHandsUp(person);
     }
-    if (currentpose.id ==="bothHandsup" ){
+    if (currentpose.id ==="Ha" ){
         return checkBothHandsUp(person);
     }
     if (currentpose.id ==="leftHandsUp" ){
