@@ -322,5 +322,6 @@ function drawTargetPose(poseImage,x,y,size){
     imageMode(CORNER);
 }
 function drawGameUI(){
+    fill(255,220,80);
     
 }
