@@ -75,6 +75,7 @@ function setup() {
     skeletonColour = color(255,255,0);
     player1colour=color(255,0,0);
     player2colour=color(0,0,255);
+    setupposearray
 }
 
 
