@@ -602,7 +602,7 @@ function checkHandsOnHead(person) {
     }
 }
 function checkCurrentPose(person){
-    if (currentpose.id ==="bothHandsup" ){
+    if (currentpose.id ==="bothHandsUp" ){
         return checkBothHandsUp(person);
     }
     if (currentpose.id ==="bothHandsup" ){
