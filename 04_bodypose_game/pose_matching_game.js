@@ -294,6 +294,12 @@ function setupposearray(){
             name:"Both hands up",
             image:BothHandsUpImage,
             id:"bothHandsUp"
-        }
+        },
+        {
+            name:"Both hands up",
+            image:BothHandsUpImage,
+            id:"bothHandsUp"
+       
+        },
     ]
 }
