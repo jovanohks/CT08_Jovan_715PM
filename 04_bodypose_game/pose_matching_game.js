@@ -609,10 +609,10 @@ function checkCurrentPose(person){
         return checkBothHandsUp(person);
     }
     if (currentpose.id ==="handsOnHead" ){
-        return checkHandsOnHead
+        return checkHandsOnHead(person);
     }
     if (currentpose.id ==="leftHandsUp" ){
-        return checkBothHandsUp(person);
+        return checkLeftHandUp(person);
     }
     if (currentpose.id ==="tPose" ){
         return checkBothHandsUp(person);
