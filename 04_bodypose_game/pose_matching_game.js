@@ -29,6 +29,8 @@ let BothHandsUpImage;
 let leftHandsUpImage;
 let rightHandsUpImage;
 let handsonheadImage;
+let posearray=[];
+
 // ====================================================
 // Preload
 // ====================================================
