@@ -30,6 +30,7 @@ let leftHandsUpImage;
 let rightHandsUpImage;
 let handsonheadImage;
 let posearray=[];
+let currentpose=null;
 
 // ====================================================
 // Preload
