@@ -310,7 +310,7 @@ function setupposearray(){
         {
             name:"T Pose",
             image:tposeImage,
-            id:"bothHandsUp"
+            id:"tPose"
         }
     ]
 }
