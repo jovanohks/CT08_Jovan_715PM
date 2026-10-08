@@ -28,6 +28,7 @@ let player2Person;
 let BothHandsUpImage;
 let leftHandsUpImage;
 let rightHandsUpImage;
+let tposeImage;
 let handsonheadImage;
 let posearray=[];
 let currentpose=null;
@@ -307,8 +308,8 @@ function setupposearray(){
             id:"leftHandsUp"
         },
         {
-            name:"Both hands up",
-            image:BothHandsUpImage,
+            name:"T Pose",
+            image:tposeImage,
             id:"bothHandsUp"
         }
     ]
