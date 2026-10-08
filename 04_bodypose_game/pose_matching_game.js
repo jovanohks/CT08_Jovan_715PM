@@ -608,8 +608,8 @@ function checkCurrentPose(person){
     if (currentpose.id ==="rightHandsUp" ){
         return checkBothHandsUp(person);
     }
-    if (currentpose.id ==="Ha" ){
-        return checkBothHandsUp(person);
+    if (currentpose.id ==="handsOnHead" ){
+        return checkHandsOnHead
     }
     if (currentpose.id ==="leftHandsUp" ){
         return checkBothHandsUp(person);
