@@ -76,7 +76,7 @@ function setup() {
     player1colour=color(255,0,0);
     player2colour=color(0,0,255);
     setupposearray();
-    currentpose=posearray[0]
+    currentpose=posearray[0];
 }
 
 
