@@ -318,5 +318,6 @@ function setupposearray(){
 }
 function drawTargetPose(poseImage,x,y,size){
     imageMode(CENTER);
+    image(poseImage,x,y,size,size);
     
 }
