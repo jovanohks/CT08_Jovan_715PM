@@ -606,7 +606,7 @@ function checkCurrentPose(person){
         return checkBothHandsUp(person);
     }
     if (currentpose.id ==="rightHandsUp" ){
-        return checkBothHandsUp(person);
+        return checkRightHandUp(person);
     }
     if (currentpose.id ==="handsOnHead" ){
         return checkHandsOnHead(person);
@@ -615,6 +615,6 @@ function checkCurrentPose(person){
         return checkLeftHandUp(person);
     }
     if (currentpose.id ==="tPose" ){
-        return checkBothHandsUp(person);
+        return checkTPose(person);
     }
 }
