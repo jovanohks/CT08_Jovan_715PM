@@ -325,4 +325,5 @@ function drawGameUI(){
     fill(255,220,80);
     textSize(28);
     text(currentpose.name,width/2,height*0.1);
+    
 }
