@@ -105,6 +105,7 @@ function draw() {
     findPlayers();
     drawPlayerSkeletons();
     drawGameUI();
+    drawPlayerPanel()
 }
 function drawSkeleton(person, skeletonColor) {
     // Set skeleton line colour.
