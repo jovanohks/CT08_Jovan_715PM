@@ -918,3 +918,6 @@ function checkPlayerScores(){
         }
     }
 }   
+function startRound(){
+    currentRound = 
+}
