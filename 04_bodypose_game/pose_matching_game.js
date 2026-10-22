@@ -881,6 +881,6 @@ function checkHandsOnHead(person) {
         return false;
     }
 }
-function drawPlayerPanel(playerName,panelCen){
+function drawPlayerPanel(playerName,panelCenterX,score,playerColour){
 
 }
