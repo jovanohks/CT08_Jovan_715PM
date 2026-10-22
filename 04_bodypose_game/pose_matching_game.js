@@ -881,3 +881,6 @@ function checkHandsOnHead(person) {
         return false;
     }
 }
+function drawPlayerPanel(){
+    
+}
