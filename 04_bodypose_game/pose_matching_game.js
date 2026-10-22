@@ -898,8 +898,13 @@ function drawPlayerPanel(playerName,panelCenterX,score,playerColour){
 
 }
 function checkPlayerScores(){
-    if (player1Person !=null && player1Scored ===false  && player2Scored ===true){
+    if (player1Person !=null && player1Scored ===false  && player2Scored ===false){
         if (checkCurrentPose(Player1Person)){
+            player1Score += pointsForFirstMatch;
+            player1Scored = true;
+            return;
+        }
+                if (checkCurrentPose(Player1Person)){
             player1Score += pointsForFirstMatch;
             player1Scored = true;
             return;
