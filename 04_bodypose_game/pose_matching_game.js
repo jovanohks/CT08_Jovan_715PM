@@ -906,10 +906,11 @@ function checkPlayerScores(){
         }
 
     }
-    if (player2Person !=null && player1Scored === false && player2Scored === false){}
+    if (player2Person !=null && player1Scored === false && player2Scored === false){
             if (checkCurrentPose(player2Person)){
             player2Score += pointsForFirstMatch;
             player2Scored = true;
             return;
         }
+    }
 }   
