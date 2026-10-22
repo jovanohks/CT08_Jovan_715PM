@@ -927,6 +927,8 @@ function startRound(){
 function endRound(){
     roundnumber +=1;
     if (roundnumber < totalrounds){
+        console.log("round end");
+        roundnumber +=1;
         
         startRound();
     }
