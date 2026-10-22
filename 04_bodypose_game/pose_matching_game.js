@@ -36,6 +36,8 @@ let player1Score=0;
 let player2Score=0;
 let player1Scored;
 let player2Scored;
+let roundnumber = 0;
+let totalrounds = 5;
 // ====================================================
 // Preload
 // ====================================================
