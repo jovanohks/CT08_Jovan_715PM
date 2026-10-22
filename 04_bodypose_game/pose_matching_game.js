@@ -904,7 +904,7 @@ function checkPlayerScores(){
             player1Scored = true;
             return;
         }
-                if (checkCurrentPose(Player1Person)){
+        if (checkCurrentPose(Player2Person)){
             player1Score += pointsForFirstMatch;
             player1Scored = true;
             return;
