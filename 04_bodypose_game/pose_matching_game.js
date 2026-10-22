@@ -919,5 +919,7 @@ function checkPlayerScores(){
     }
 }   
 function startRound(){
-    currentRound = 
+    currentPose = posearray[roundnumber];
+    player1Scored = false;
+    
 }
