@@ -905,7 +905,8 @@ function checkPlayerScores(){
             return;
         }
 
-    }if (player2Person !=null )
+    }
+    if (player2Person !=null && player1Scored === false && player2Scored === false){}
             if (checkCurrentPose(player2Person)){
             player2Score += pointsForFirstMatch;
             player2Scored = true;
