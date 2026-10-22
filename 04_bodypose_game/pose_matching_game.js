@@ -885,6 +885,6 @@ function drawPlayerPanel(playerName,panelCenterX,score,playerColour){
     noStroke();
     fill(playerColour);
     textSize(24);
-    
+    text(playerName,panelCenterX,70);
 
 }
