@@ -881,6 +881,6 @@ function checkHandsOnHead(person) {
         return false;
     }
 }
-function drawPlayerPanel(){
-    
+function drawPlayerPanel(playerName,panelCen){
+
 }
