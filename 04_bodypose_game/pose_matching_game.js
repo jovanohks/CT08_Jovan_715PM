@@ -332,6 +332,9 @@ function drawGameUI(){
     if (currentpose === null || currentpose === undefined){
         return;
     }
+
+    if (pointIsReady(leftShoulder) === false) {
+        return false;
     fill(255,220,80);
     textSize(28);
     text(currentpose.name,width/2,height*0.1);
@@ -417,7 +420,7 @@ function checkLeftHandUp(person) {
     if (pointIsReady(rightWrist) === false) {
         return false;
     }
-
+https://prod.liveshare.vsengsaas.visualstudio.com/join?5EDD3313522832611C2FA4BC0A8E9EFC4A8A
     if (pointIsReady(leftShoulder) === false) {
         return false;
     }
@@ -877,4 +880,4 @@ function checkHandsOnHead(person) {
         return false;
     }
 }
-          
+}
