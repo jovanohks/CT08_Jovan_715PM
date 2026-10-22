@@ -612,6 +612,7 @@ function checkHandsOnHead(person) {
     }
 }
 function checkCurrentPose(person){
+    if (currentpose === null || )
     if (currentpose.id ==="bothHandsUp" ){
         return checkBothHandsUp(person);
     }
