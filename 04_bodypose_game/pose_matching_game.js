@@ -910,6 +910,7 @@ function checkPlayerScores(){
             if (checkCurrentPose(player2Person)){
             player2Score += pointsForFirstMatch;
             player2Scored = true;
+            console.log("P2 Scored!");
             return;
         }
     }
