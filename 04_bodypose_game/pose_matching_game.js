@@ -883,6 +883,8 @@ function checkHandsOnHead(person) {
 }
 function drawPlayerPanel(playerName,panelCenterX,score,playerColour){
     noStroke();
-    fill()
+    fill(playerColour);
+    textSize(24);
+    
 
 }
