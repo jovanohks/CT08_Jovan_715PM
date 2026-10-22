@@ -904,10 +904,11 @@ function checkPlayerScores(){
             player1Scored = true;
             return;
         }
-        if (checkCurrentPose(player2Person)){
+
+    }
+            if (checkCurrentPose(player2Person)){
             player2Score += pointsForFirstMatch;
             player2Scored = true;
             return;
         }
-    }
-}
+}   
