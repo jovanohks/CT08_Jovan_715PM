@@ -32,7 +32,9 @@ let tposeImage;
 let handsonheadImage;
 let posearray=[];
 let currentpose=null;
-
+let player1Score;
+let player2Score;
+let player
 // ====================================================
 // Preload
 // ====================================================
