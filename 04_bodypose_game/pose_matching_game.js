@@ -882,5 +882,7 @@ function checkHandsOnHead(person) {
     }
 }
 function drawPlayerPanel(playerName,panelCenterX,score,playerColour){
+    noStroke();
+    fill()
 
 }
