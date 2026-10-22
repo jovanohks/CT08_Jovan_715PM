@@ -921,5 +921,12 @@ function checkPlayerScores(){
 function startRound(){
     currentPose = posearray[roundnumber];
     player1Scored = false;
-    
+    player2Scored = false;
+
+}
+function endRound(){
+    roundnumber +=1;
+    if (roundnumber < totalrounds){
+        
+    }
 }
