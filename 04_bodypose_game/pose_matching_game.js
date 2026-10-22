@@ -613,7 +613,8 @@ function checkHandsOnHead(person) {
 }
 function checkCurrentPose(person){
     if (currentpose === null || currentpose === undefined){
-        
+        console.log("no current pose");
+        return;
     }
     if (currentpose.id ==="bothHandsUp" ){
         return checkBothHandsUp(person);
