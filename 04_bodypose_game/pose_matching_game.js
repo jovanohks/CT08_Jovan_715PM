@@ -897,3 +897,6 @@ function drawPlayerPanel(playerName,panelCenterX,score,playerColour){
     text(playerName,panelCenterX,70);
 
 }
+function checkPlayerScores(){
+    if (player1Person !=null && player1Scored ===false  && player2Scored = )
+}
