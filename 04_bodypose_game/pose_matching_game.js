@@ -335,6 +335,7 @@ function drawGameUI(){
 
     if (pointIsReady(leftShoulder) === false) {
         return false;
+    }
     fill(255,220,80);
     textSize(28);
     text(currentpose.name,width/2,height*0.1);
@@ -879,5 +880,4 @@ function checkHandsOnHead(person) {
     } else {
         return false;
     }
-}
 }
