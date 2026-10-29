@@ -12,7 +12,44 @@ let playerBullets = [];
 let enemyBullets = [];
 
 let stars = [];
-let controlsPrompt = "A / D move    SPACE jump    SHIFT crouch    RIGHT CLICK fire";
+
+const WEAPONS = {
+  sword: {
+    label: "Sword",
+    damage: 25,
+    cooldown: 500,
+    ammo: 10,
+    maxAmmo: 10,
+    range: 85,
+    projectile: false,
+    color: "#7fe8ff",
+  },
+  machineGun: {
+    label: "Machine Gun",
+    damage: 11,
+    cooldown: 120,
+    ammo: 35,
+    maxAmmo: 35,
+    range: 500,
+    projectile: true,
+    speed: 9.5,
+    color: "#ffc857",
+  },
+  rifle: {
+    label: "Rifle",
+    damage: 18,
+    cooldown: 260,
+    ammo: 12,
+    maxAmmo: 12,
+    range: 620,
+    projectile: true,
+    speed: 11,
+    color: "#7dff9e",
+  },
+};
+
+let controlsPrompt =
+  "A / D move    SPACE jump    SHIFT crouch    RIGHT CLICK fire    1/2/3 weapon";
 
 function setup() {
   createCanvas(canvasWidth, canvasHeight);
@@ -151,6 +188,7 @@ function createPlayer() {
     shotDelay: 260,
     crouching: false,
     facing: 1,
+    weapon: "rifle",
   };
 }
 
@@ -210,7 +248,7 @@ function drawEnemy() {
 
   rectMode(CENTER);
   noStroke();
-  fill(isBoss ? 255 : 255, isBoss ? 80 : 150, isBoss ? 130 : 80);
+  fill(255, isBoss ? 80 : 150, isBoss ? 130 : 80);
   rect(bodyX, bodyY, enemy.width, bodyH, 12);
 
   fill(255, 230, 220);
@@ -239,14 +277,32 @@ function drawHUD() {
   const barWidth = 260;
   const barX = 22;
   const enemyBarX = width - barWidth - 22;
+  const weaponData = WEAPONS[player.weapon];
 
   drawHealthBar(barX, 20, barWidth, 18, player.health, player.maxHealth, "PILOT");
-  drawHealthBar(enemyBarX, 20, barWidth, 18, enemy ? enemy.health : 0, enemy ? enemy.maxHealth : 100, roundNumber === 3 ? "BOSS" : "RIVAL");
+  drawHealthBar(
+    enemyBarX,
+    20,
+    barWidth,
+    18,
+    enemy ? enemy.health : 0,
+    enemy ? enemy.maxHealth : 100,
+    roundNumber === 3 ? "BOSS" : "RIVAL"
+  );
 
   textAlign(CENTER, TOP);
   fill(210, 230, 240);
   textSize(18);
   text("ROUND " + roundNumber, width / 2, 18);
+
+  textAlign(LEFT, TOP);
+  fill(weaponData.color);
+  textSize(14);
+  text(
+    weaponData.label + "  Ammo: " + weaponData.ammo + "/" + weaponData.maxAmmo,
+    24,
+    48
+  );
 
   textAlign(CENTER, CENTER);
   fill(130, 200, 255);
@@ -307,9 +363,12 @@ function updatePlayer() {
     player.onGround = true;
   }
 
-  if (mouseIsPressed && mouseButton === RIGHT && millis() - player.lastShot > player.shotDelay) {
-    shootPlayerBullet();
-    player.lastShot = millis();
+  if (
+    mouseIsPressed &&
+    mouseButton === RIGHT &&
+    millis() - player.lastShot >= WEAPONS[player.weapon].cooldown
+  ) {
+    firePlayerWeapon();
   }
 }
 
@@ -354,12 +413,18 @@ function updateBullets() {
 
     const hitEnemy = dist(bullet.x, bullet.y, enemy.x, enemy.y) < enemy.width * 0.7;
     if (hitEnemy) {
-      enemy.health -= roundNumber === 3 ? 14 : 18;
+      enemy.health -= WEAPONS[player.weapon].damage;
       playerBullets.splice(i, 1);
       continue;
     }
 
-    if (bullet.life <= 0 || bullet.x < -20 || bullet.x > width + 20 || bullet.y < -20 || bullet.y > height + 20) {
+    if (
+      bullet.life <= 0 ||
+      bullet.x < -20 ||
+      bullet.x > width + 20 ||
+      bullet.y < -20 ||
+      bullet.y > height + 20
+    ) {
       playerBullets.splice(i, 1);
     }
   }
@@ -377,24 +442,51 @@ function updateBullets() {
       continue;
     }
 
-    if (bullet.life <= 0 || bullet.x < -20 || bullet.x > width + 20 || bullet.y < -20 || bullet.y > height + 20) {
+    if (
+      bullet.life <= 0 ||
+      bullet.x < -20 ||
+      bullet.x > width + 20 ||
+      bullet.y < -20 ||
+      bullet.y > height + 20
+    ) {
       enemyBullets.splice(i, 1);
     }
   }
 }
 
-function shootPlayerBullet() {
-  const angle = atan2(enemy.y - player.y, enemy.x - player.x);
-  const speed = 9;
+function firePlayerWeapon() {
+  const weapon = WEAPONS[player.weapon];
 
-  playerBullets.push({
-    x: player.x + cos(angle) * 26,
-    y: player.y + sin(angle) * 20,
-    vx: cos(angle) * speed,
-    vy: sin(angle) * speed,
-    life: 90,
-    radius: 5,
-  });
+  if (weapon.ammo <= 0) {
+    return;
+  }
+
+  if (millis() - player.lastShot < weapon.cooldown) {
+    return;
+  }
+
+  weapon.ammo -= 1;
+  player.lastShot = millis();
+
+  if (weapon.projectile) {
+    const angle = atan2(enemy.y - player.y, enemy.x - player.x);
+    const speed = weapon.speed;
+
+    playerBullets.push({
+      x: player.x + cos(angle) * 26,
+      y: player.y + sin(angle) * 20,
+      vx: cos(angle) * speed,
+      vy: sin(angle) * speed,
+      life: 90,
+      radius: 5,
+    });
+  } else {
+    const distanceToEnemy = dist(player.x, player.y, enemy.x, enemy.y);
+    const inRange = distanceToEnemy < weapon.range + 20;
+    if (inRange) {
+      enemy.health -= weapon.damage;
+    }
+  }
 }
 
 function shootEnemyBullet() {
@@ -424,7 +516,14 @@ function checkEndConditions() {
     }
 
     roundNumber += 1;
+    resetPlayerAmmo();
     createEnemy();
+  }
+}
+
+function resetPlayerAmmo() {
+  for (const key in WEAPONS) {
+    WEAPONS[key].ammo = WEAPONS[key].maxAmmo;
   }
 }
 
@@ -455,6 +554,16 @@ function keyPressed() {
     return;
   }
 
+  if (key === "1") {
+    player.weapon = "sword";
+  } else if (key === "2") {
+    player.weapon = "machineGun";
+  } else if (key === "3") {
+    player.weapon = "rifle";
+  } else if (key === "r" || key === "R") {
+    resetPlayerAmmo();
+  }
+
   if (keyCode === 32 && player.onGround) {
     player.velocityY = -13.5;
     player.onGround = false;
@@ -468,10 +577,7 @@ function mousePressed() {
   }
 
   if (gameState === "playing" && mouseButton === RIGHT) {
-    if (millis() - player.lastShot > player.shotDelay) {
-      shootPlayerBullet();
-      player.lastShot = millis();
-    }
+    firePlayerWeapon();
   }
 }
 
@@ -479,6 +585,7 @@ function startGame() {
   roundNumber = 1;
   createPlayer();
   createEnemy();
+  resetPlayerAmmo();
   player.health = 100;
   player.maxHealth = 100;
   enemy.health = enemy.maxHealth;
