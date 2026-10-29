@@ -508,8 +508,7 @@ function firePlayerWeapon() {
     return;
   }
 
-  const enemyInFront =
-    player.facing === 1 ? enemy.x >= player.x : enemy.x <= player.x;
+  const enemyInFront = player.facing === 1 ? enemy.x >= player.x : enemy.x <= player.x;
 
   if (!enemyInFront) {
     return;
@@ -569,7 +568,6 @@ function checkEndConditions() {
     }
 
     roundNumber += 1;
-    resetPlayerAmmo();
     createEnemy();
   }
 }
