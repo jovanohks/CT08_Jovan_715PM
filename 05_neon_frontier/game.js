@@ -18,8 +18,8 @@ const WEAPONS = {
     label: "Sword",
     damage: 25,
     cooldown: 500,
-    ammo: 10,
-    maxAmmo: 10,
+    ammo: Infinity,
+    maxAmmo: Infinity,
     range: 85,
     projectile: false,
     color: "#7fe8ff",
@@ -28,8 +28,8 @@ const WEAPONS = {
     label: "Machine Gun",
     damage: 11,
     cooldown: 120,
-    ammo: 35,
-    maxAmmo: 35,
+    ammo: 80,
+    maxAmmo: 80,
     range: 500,
     projectile: true,
     speed: 9.5,
@@ -39,8 +39,8 @@ const WEAPONS = {
     label: "Rifle",
     damage: 18,
     cooldown: 260,
-    ammo: 12,
-    maxAmmo: 12,
+    ammo: 24,
+    maxAmmo: 24,
     range: 620,
     projectile: true,
     speed: 11,
@@ -49,7 +49,7 @@ const WEAPONS = {
 };
 
 let controlsPrompt =
-  "A / D move    SPACE jump    SHIFT crouch    RIGHT CLICK fire    1/2/3 weapon";
+  "A / D move    SPACE jump    SHIFT crouch    LEFT CLICK fire    1/2/3 weapon";
 
 function setup() {
   createCanvas(canvasWidth, canvasHeight);
@@ -295,14 +295,15 @@ function drawHUD() {
   textSize(18);
   text("ROUND " + roundNumber, width / 2, 18);
 
+  const ammoText =
+    Number.isFinite(weaponData.ammo) && Number.isFinite(weaponData.maxAmmo)
+      ? weaponData.ammo + "/" + weaponData.maxAmmo
+      : "∞";
+
   textAlign(LEFT, TOP);
   fill(weaponData.color);
   textSize(14);
-  text(
-    weaponData.label + "  Ammo: " + weaponData.ammo + "/" + weaponData.maxAmmo,
-    24,
-    48
-  );
+  text(weaponData.label + "  Ammo: " + ammoText, 24, 48);
 
   textAlign(CENTER, CENTER);
   fill(130, 200, 255);
@@ -365,7 +366,7 @@ function updatePlayer() {
 
   if (
     mouseIsPressed &&
-    mouseButton === RIGHT &&
+    mouseButton === LEFT &&
     millis() - player.lastShot >= WEAPONS[player.weapon].cooldown
   ) {
     firePlayerWeapon();
@@ -457,7 +458,7 @@ function updateBullets() {
 function firePlayerWeapon() {
   const weapon = WEAPONS[player.weapon];
 
-  if (weapon.ammo <= 0) {
+  if (weapon.ammo !== Infinity && weapon.ammo <= 0) {
     return;
   }
 
@@ -465,7 +466,10 @@ function firePlayerWeapon() {
     return;
   }
 
-  weapon.ammo -= 1;
+  if (weapon.ammo !== Infinity) {
+    weapon.ammo -= 1;
+  }
+
   player.lastShot = millis();
 
   if (weapon.projectile) {
@@ -522,9 +526,9 @@ function checkEndConditions() {
 }
 
 function resetPlayerAmmo() {
-  for (const key in WEAPONS) {
-    WEAPONS[key].ammo = WEAPONS[key].maxAmmo;
-  }
+  WEAPONS.sword.ammo = Infinity;
+  WEAPONS.machineGun.ammo = WEAPONS.machineGun.maxAmmo;
+  WEAPONS.rifle.ammo = WEAPONS.rifle.maxAmmo;
 }
 
 function drawEndScreen(titleText, subtitleText) {
@@ -561,7 +565,9 @@ function keyPressed() {
   } else if (key === "3") {
     player.weapon = "rifle";
   } else if (key === "r" || key === "R") {
-    resetPlayerAmmo();
+    if (player.weapon !== "sword") {
+      WEAPONS[player.weapon].ammo = WEAPONS[player.weapon].maxAmmo;
+    }
   }
 
   if (keyCode === 32 && player.onGround) {
@@ -576,7 +582,7 @@ function mousePressed() {
     return;
   }
 
-  if (gameState === "playing" && mouseButton === RIGHT) {
+  if (gameState === "playing" && mouseButton === LEFT) {
     firePlayerWeapon();
   }
 }
