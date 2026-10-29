@@ -508,6 +508,13 @@ function firePlayerWeapon() {
     return;
   }
 
+  const enemyInFront =
+    player.facing === 1 ? enemy.x >= player.x : enemy.x <= player.x;
+
+  if (!enemyInFront) {
+    return;
+  }
+
   if (weapon.ammo !== Infinity) {
     weapon.ammo -= 1;
   }
