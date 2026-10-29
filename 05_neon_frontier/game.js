@@ -26,7 +26,7 @@ const WEAPONS = {
   },
   machineGun: {
     label: "Machine Gun",
-    damage: 11,
+    damage: 7,
     cooldown: 120,
     ammo: 80,
     maxAmmo: 80,
@@ -217,6 +217,7 @@ function drawPlayer() {
   const bodyX = player.x;
   const bodyY = player.y;
   const bodyH = player.crouching ? 36 : 58;
+  const facing = player.facing;
 
   rectMode(CENTER);
   noStroke();
@@ -225,9 +226,9 @@ function drawPlayer() {
   rect(bodyX, bodyY, player.width, bodyH, 8);
 
   fill(210, 255, 255);
-  rect(bodyX + 8, bodyY - bodyH * 0.35, 8, 8, 2);
+  rect(bodyX + 8 * facing, bodyY - bodyH * 0.35, 8, 8, 2);
 
-  if (player.facing === -1) {
+  if (facing === -1) {
     fill(60, 180, 210);
     rect(bodyX - 18, bodyY + 6, 12, 3);
   } else {
@@ -235,7 +236,48 @@ function drawPlayer() {
     rect(bodyX + 18, bodyY + 6, 12, 3);
   }
 
+  drawWeaponSprite(bodyX, bodyY, bodyH, facing, player.weapon);
+
   rectMode(CORNER);
+}
+
+function drawWeaponSprite(x, y, bodyHeight, facing, weaponName) {
+  const weapon = WEAPONS[weaponName];
+  const offsetX = facing * 20;
+  const offsetY = y + 2;
+
+  noStroke();
+
+  if (weaponName === "sword") {
+    fill(weapon.color);
+    push();
+    translate(x + offsetX, offsetY);
+    rotate(facing === 1 ? 0 : PI);
+    triangle(0, -10, 34, 0, 0, 10);
+    pop();
+    return;
+  }
+
+  if (weaponName === "machineGun") {
+    fill("#e3b75a");
+    rect(x + facing * 14, offsetY - 5, facing * 28, 8, 3);
+
+    fill("#3d4e5b");
+    rect(x + facing * 18, offsetY - 9, facing * 12, 6, 2);
+
+    fill(weapon.color);
+    rect(x + facing * 30, offsetY - 6, facing * 10, 4, 2);
+    return;
+  }
+
+  fill("#2d3d4a");
+  rect(x + facing * 14, offsetY - 5, facing * 28, 8, 3);
+
+  fill(weapon.color);
+  rect(x + facing * 30, offsetY - 4, facing * 18, 4, 2);
+
+  fill("#111827");
+  rect(x + facing * 10, offsetY - 9, facing * 8, 5, 2);
 }
 
 function drawEnemy() {
